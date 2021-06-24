@@ -2,16 +2,16 @@ from pydantic import BaseModel
 
 
 class LocatieserverBaseModel(BaseModel):
-    pass
+    """BaseModel replacement for sharing the configuration across the different schemas."""
 
 
 class SuggestResponse(LocatieserverBaseModel):
-    pass
+    """Response schema for suggest()."""
 
 
 class LookupResponse(LocatieserverBaseModel):
-    pass
+    """Response schema for lookup()."""
 
 
 class FreeResponse(LocatieserverBaseModel):
-    pass
+    """Response schema for free()."""
