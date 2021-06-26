@@ -45,6 +45,6 @@ def suggest(
         fq=fq,
     )
 
-    response = http_get(BASE_URL + PATH, params=params)
+    response = http_get(PATH, params=params)
 
     return SuggestResponse.parse_raw(response.content)
