@@ -27,9 +27,7 @@
                 "provincieafkorting": "UT",
                 "centroide_rd": "POINT(135782.745 452910.011)",
                 "straatnaam": "Europalaan",
-                "gekoppeld_perceel": [
-                    "UTT00-R-364"
-                ]
+                "gekoppeld_perceel": ["UTT00-R-364"]
             }
         ]
     }

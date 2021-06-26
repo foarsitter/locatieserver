@@ -1,8 +1,5 @@
 from typing import Optional
 
-import httpx
-
-from locatieserver.client.config import BASE_URL
 from locatieserver.client.utils import filter_defaults, http_get
 from locatieserver.schema import SuggestResponse
 
@@ -25,9 +22,6 @@ def suggest(
     lon: Optional[float] = None,
     fq: Optional[str] = "type:(gemeente OR woonplaats OR weg OR postcode OR adres)",
 ) -> SuggestResponse:
-    """
-    Suggest-service
-    """
 
     params = filter_defaults(
         suggest,

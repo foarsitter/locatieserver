@@ -28,10 +28,7 @@
                 "provincieafkorting": "UT",
                 "centroide_rd": "POINT(137569.474 455650.561)",
                 "straatnaam": "Bolstraat",
-                "gekoppeld_perceel": [
-                    "ASD40-C-7285",
-                    "ASD40-C-8930"
-                ],
+                "gekoppeld_perceel": ["ASD40-C-7285", "ASD40-C-8930"],
                 "score": 27.59121
             }
         ]

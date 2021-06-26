@@ -1,8 +1,5 @@
 from typing import Optional
 
-import httpx
-
-from locatieserver.client.config import BASE_URL
 from locatieserver.client.utils import filter_defaults, http_get
 from locatieserver.schema.lookup import LookupResponse
 
@@ -19,9 +16,6 @@ def lookup(
     lon: Optional[float] = None,
     fq: Optional[str] = "type:(gemeente OR woonplaats OR weg OR postcode OR adres)",
 ) -> LookupResponse:
-    """
-    Lookup-service
-    """
     params = filter_defaults(
         lookup,
         id=id,

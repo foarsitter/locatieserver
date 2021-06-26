@@ -4,7 +4,6 @@ point_matcher = re.compile("([+-]?[0-9]+[.][0-9]+) ([+-]?[0-9]+[.][0-9]+)")
 
 
 class Point(str):
-
     @property
     def match_point(self):
         if not hasattr(self, "match"):

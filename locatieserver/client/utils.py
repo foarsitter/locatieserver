@@ -1,10 +1,10 @@
 import inspect
-from typing import Callable, Dict, Any
+from typing import Any, Callable, Dict
 
 import httpx
 
 from locatieserver.client.config import BASE_URL
-from locatieserver.schema.error import Error, ErrorResponse
+from locatieserver.schema.error import ErrorResponse
 
 DEFAULT_CACHE = {}
 

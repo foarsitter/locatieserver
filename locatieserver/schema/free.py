@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-from pydantic import Field
 from typing import List
+
+from pydantic import Field
 
 from locatieserver.schema.base import LocatieserverBaseModel
 

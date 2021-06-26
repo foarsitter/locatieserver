@@ -1,8 +1,5 @@
 from typing import Optional
 
-import httpx
-
-from locatieserver.client.config import BASE_URL
 from locatieserver.client.utils import filter_defaults, http_get
 from locatieserver.schema.free import FreeResponse
 
