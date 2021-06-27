@@ -49,23 +49,7 @@ You can install *locatieserver* via pip_ from PyPI_:
 Usage
 -----
 
-Suggest
-###########
-
-.. literalinclude:: ../locatieserver/client/tests/test_suggest.py
-    :pyobject: test_suggest
-    :linenos:
-    :lines: 3-
-    :dedent: 4
-
-Lookup
-###########
-
-.. literalinclude:: ../locatieserver/client/tests/test_lookup.py
-    :pyobject: test_lookup
-    :linenos:
-    :lines: 3-
-    :dedent: 4
+See for https://foarsitter.github.io/locatieserver/usage.html usage
 
 
 Free
