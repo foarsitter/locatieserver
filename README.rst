@@ -1,7 +1,7 @@
 locatieserver
 ===========================
 
-|PyPI| |Python Version| |License| |Read the Docs| |Build| |Tests| |Codecov| |pre-commit| |Black|
+|PyPI| |Python Version| |License| |Build| |Tests| |Codecov| |pre-commit| |Black|
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/locatieserver.svg
    :target: https://pypi.org/project/locatieserver/
@@ -31,12 +31,17 @@ locatieserver
    :target: https://github.com/psf/black
    :alt: Black
 
+This repository contains a client for the PDOK locatieserver_.
 
-Features
+.. _locatieserver: https://foarsitter.github.io/locatieserver/readme.html
+
+
+Services
 --------
 
-* TODO
-
+* suggest
+* lookup
+* free
 
 Installation
 ------------
