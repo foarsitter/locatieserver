@@ -1,5 +1,7 @@
 .. include:: ../README.rst
-===========================
+================================
+
+
 Welcome to locatieserver's documentation!
 ==========================================================
 
@@ -16,7 +18,7 @@ Welcome to locatieserver's documentation!
    code_of_conduct
 
 Indices and tables
-==================
+========================
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
