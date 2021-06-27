@@ -1,7 +1,7 @@
 from locatieserver.client import lookup
 
 
-def test_lookkup():
+def test_lookup():
 
     x = lookup("adr-bf54db721969487ed33ba84d9973c702")
 
