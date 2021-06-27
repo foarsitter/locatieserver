@@ -52,15 +52,6 @@ Usage
 See for https://foarsitter.github.io/locatieserver/usage.html usage
 
 
-Free
-###########
-
-.. literalinclude:: ../locatieserver/client/tests/test_free.py
-    :pyobject: test_free
-    :linenos:
-    :lines: 3-
-    :dedent: 4
-
 
 Credits
 -------
