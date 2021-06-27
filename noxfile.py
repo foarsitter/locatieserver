@@ -107,7 +107,7 @@ def safety(session: Session) -> None:
 @session(python=python_versions)
 def mypy(session: Session) -> None:
     """Type-check using mypy."""
-    args = session.posargs or ["locatieserver", "tests", "docs/conf.py"]
+    args = session.posargs or ["locatieserver", "docs/conf.py"]
     session.install(".")
     session.install("mypy", "pytest", "types-pkg-resources", "types-requests", "types-attrs")
     session.run("mypy", *args)
