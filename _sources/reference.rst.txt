@@ -1,10 +1,7 @@
 Reference
 =========
 
-.. contents::
-    :local:
-    :backlinks: none
-
-
-.. automodule:: locatieserver.__main__
-   :members:
+.. automodule:: locatieserver.client
+   :members: suggest, lookup, free
+   :undoc-members:
+   :show-inheritance:
