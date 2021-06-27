@@ -184,23 +184,7 @@
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="suggest">
-<h3>Suggest<a class="headerlink" href="#suggest" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">response</span> <span class="o">=</span> <span class="n">locatieserver</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">suggest</span><span class="p">(</span><span class="s2">&quot;Westerein&quot;</span><span class="p">)</span>
-<span class="linenos">2</span>
-<span class="linenos">3</span><span class="k">assert</span> <span class="n">response</span>
-<span class="linenos">4</span><span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">139</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="lookup">
-<h3>Lookup<a class="headerlink" href="#lookup" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">x</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">(</span><span class="s2">&quot;adr-bf54db721969487ed33ba84d9973c702&quot;</span><span class="p">)</span>
-<span class="linenos">2</span>
-<span class="linenos">3</span><span class="k">assert</span> <span class="n">x</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">1</span>
-</pre></div>
-</div>
-</div>
+<p>See for <a class="reference external" href="https://foarsitter.github.io/locatieserver/usage.html">https://foarsitter.github.io/locatieserver/usage.html</a> usage</p>
 <div class="section" id="free">
 <h3>Free<a class="headerlink" href="#free" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">response</span> <span class="o">=</span> <span class="n">free</span><span class="p">(</span><span class="s2">&quot;Bolstraat and Utrecht and type:adres&quot;</span><span class="p">)</span>
