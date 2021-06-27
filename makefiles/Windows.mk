@@ -49,7 +49,7 @@ clean-test: ## remove test and coverage artifacts
 	if exist .pytest_cache rd /s /q .pytest_cache
 
 lint: ## check style with flake8
-	flake8 locatieserver tests
+	flake8 locatieserver
 
 test: ## run tests quickly with the default Python
 	pytest

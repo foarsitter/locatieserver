@@ -29,9 +29,7 @@ def suggest(
     :param q: Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,
         bijv. combineren met `and`, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.
         Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.
-    :type q: str
     :param fl: Hiermee worden de velden opgegeven die teruggegeven dienen te worden.
-    :type fl: str
     :param sort: Hiermee kan worden opgegeven hoe de sortering plaatsvindt.
         De defaultwaarde is `score desc, sortering asc, weergavenaam asc`.
         Door voor deze string `typesortering asc` toe te voegen, kan de oude sortering worden gebruikt.
@@ -67,7 +65,7 @@ def suggest(
         Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.
     :param fq: Hiermee kan een filter query worden opgegeven, bijv. `fq=bron:BAG`.
         Met `fq=*` kan de default filter query worden opgeheven.
-    :return: SuggestResponse
+    :return: SuggestResponse schema
     :rtype: SuggestResponse
     """
     params = filter_defaults(
