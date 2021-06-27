@@ -187,6 +187,37 @@
     <span class="n">lon</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">fq</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;type:(gemeente OR woonplaats OR weg OR postcode OR adres)&quot;</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LookupResponse</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Lookup Service</span>
+
+<span class="sd">    For more info: https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#4lookup-service</span>
+
+<span class="sd">    :param id: Bij de lookup-service moet de id-parameter worden gebruikt om het ID op te geven van het object</span>
+<span class="sd">        waar naar gezocht dient te worden. De waarde van het ID kan worden bepaald door gebruik te maken van</span>
+<span class="sd">        de suggest-service, of deze kan uit een extern systeem komen waar dit ID eerder in is opgeslagen.</span>
+<span class="sd">    :param rows: Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)</span>
+<span class="sd">        is dat teruggegeven moet worden op deze bevraging.</span>
+<span class="sd">    :param start: Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.</span>
+<span class="sd">        Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</span>
+<span class="sd">    :param wt: Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</span>
+<span class="sd">    :param indent: Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</span>
+<span class="sd">    :param lat: Werkt alleen in combinatie met `lon`.</span>
+<span class="sd">        Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.</span>
+<span class="sd">        Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.</span>
+<span class="sd">        Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.</span>
+<span class="sd">        Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.</span>
+<span class="sd">        Hier worden meestal meerdere resultaten teruggegeven.</span>
+<span class="sd">        Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</span>
+<span class="sd">    :param lon: Werkt alleen in combinatie met `lat`.</span>
+<span class="sd">        Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.</span>
+<span class="sd">        Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.</span>
+<span class="sd">        Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.</span>
+<span class="sd">        Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.</span>
+<span class="sd">        Hier worden meestal meerdere resultaten teruggegeven.</span>
+<span class="sd">        Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</span>
+<span class="sd">    :param fq: Hiermee kan een filter query worden opgegeven, bijv. `fq=bron:BAG`.</span>
+<span class="sd">        Met `fq=*` kan de default filter query worden opgeheven.</span>
+<span class="sd">    :return: LookupResponse schema</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">params</span> <span class="o">=</span> <span class="n">filter_defaults</span><span class="p">(</span>
         <span class="n">lookup</span><span class="p">,</span>
         <span class="nb">id</span><span class="o">=</span><span class="nb">id</span><span class="p">,</span>

@@ -190,7 +190,45 @@
     <span class="n">lon</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">fq</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;type:(gemeente OR woonplaats OR weg OR postcode OR adres)&quot;</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FreeResponse</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Free service</span>
 
+<span class="sd">    For more info: https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#5vrije-geocoder-service</span>
+
+<span class="sd">    :param q: Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,</span>
+<span class="sd">        bijv. combineren met `and`, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.</span>
+<span class="sd">        Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.</span>
+<span class="sd">    :param fl: Hiermee worden de velden opgegeven die teruggegeven dienen te worden.</span>
+<span class="sd">    :param sort: Hiermee kan worden opgegeven hoe de sortering plaatsvindt.</span>
+<span class="sd">        De defaultwaarde is `score desc, sortering asc, weergavenaam asc`.</span>
+<span class="sd">        Door voor deze string `typesortering asc` toe te voegen, kan de oude sortering worden gebruikt.</span>
+<span class="sd">    :param df: Met behulp van deze parameter kan aan bepaalde *velden* een extra boost worden meegegeven.</span>
+<span class="sd">        Hiermee kan de scoreberekening worden aangepast.</span>
+<span class="sd">        De defaultwaarde is exacte_match^1 suggest^0.5 huisnummer^0.5 huisletter^0.5 huisnummertoevoeging^0.5.</span>
+<span class="sd">        Om alleen van het suggest-veld gebruik te maken, kan qf=suggest worden meegegeven.</span>
+<span class="sd">    :param rows: Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)</span>
+<span class="sd">        is dat teruggegeven moet worden op deze bevraging.</span>
+<span class="sd">    :param start: Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.</span>
+<span class="sd">        Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</span>
+<span class="sd">    :param wt: Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</span>
+<span class="sd">    :param indent: Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</span>
+<span class="sd">    :param lat: Werkt alleen in combinatie met `lon`.</span>
+<span class="sd">        Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.</span>
+<span class="sd">        Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.</span>
+<span class="sd">        Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.</span>
+<span class="sd">        Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.</span>
+<span class="sd">        Hier worden meestal meerdere resultaten teruggegeven.</span>
+<span class="sd">        Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</span>
+<span class="sd">    :param lon: Werkt alleen in combinatie met `lat`.</span>
+<span class="sd">        Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.</span>
+<span class="sd">        Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.</span>
+<span class="sd">        Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.</span>
+<span class="sd">        Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.</span>
+<span class="sd">        Hier worden meestal meerdere resultaten teruggegeven.</span>
+<span class="sd">        Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</span>
+<span class="sd">    :param fq: Hiermee kan een filter query worden opgegeven, bijv. `fq=bron:BAG`.</span>
+<span class="sd">        Met `fq=*` kan de default filter query worden opgeheven.</span>
+<span class="sd">    :return: FreeResponse schema</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">params</span> <span class="o">=</span> <span class="n">filter_defaults</span><span class="p">(</span>
         <span class="n">free</span><span class="p">,</span>
         <span class="n">q</span><span class="o">=</span><span class="n">q</span><span class="p">,</span>

@@ -200,9 +200,7 @@
 <span class="sd">    :param q: Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,</span>
 <span class="sd">        bijv. combineren met `and`, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.</span>
 <span class="sd">        Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.</span>
-<span class="sd">    :type q: str</span>
 <span class="sd">    :param fl: Hiermee worden de velden opgegeven die teruggegeven dienen te worden.</span>
-<span class="sd">    :type fl: str</span>
 <span class="sd">    :param sort: Hiermee kan worden opgegeven hoe de sortering plaatsvindt.</span>
 <span class="sd">        De defaultwaarde is `score desc, sortering asc, weergavenaam asc`.</span>
 <span class="sd">        Door voor deze string `typesortering asc` toe te voegen, kan de oude sortering worden gebruikt.</span>
@@ -238,7 +236,7 @@
 <span class="sd">        Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</span>
 <span class="sd">    :param fq: Hiermee kan een filter query worden opgegeven, bijv. `fq=bron:BAG`.</span>
 <span class="sd">        Met `fq=*` kan de default filter query worden opgeheven.</span>
-<span class="sd">    :return: SuggestResponse</span>
+<span class="sd">    :return: SuggestResponse schema</span>
 <span class="sd">    :rtype: SuggestResponse</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">params</span> <span class="o">=</span> <span class="n">filter_defaults</span><span class="p">(</span>
