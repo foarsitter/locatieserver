@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Usage &mdash; locatieserver 0.2.0 documentation</title>
+  <title>Usage &mdash; locatieserver 0.3.0 documentation</title>
   
 
   
@@ -71,7 +71,7 @@
             
             
               <div class="version">
-                0.2.0
+                0.3.0
               </div>
             
           
@@ -100,7 +100,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="readme.html">locatieserver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#suggest">Suggest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lookup">Lookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#free">Free</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
@@ -174,6 +179,31 @@
             
   <div class="section" id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="suggest">
+<h2>Suggest<a class="headerlink" href="#suggest" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">response</span> <span class="o">=</span> <span class="n">locatieserver</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">suggest</span><span class="p">(</span><span class="s2">&quot;Westerein&quot;</span><span class="p">)</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">assert</span> <span class="n">response</span>
+<span class="linenos">4</span><span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">139</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lookup">
+<h2>Lookup<a class="headerlink" href="#lookup" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">x</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">(</span><span class="s2">&quot;adr-bf54db721969487ed33ba84d9973c702&quot;</span><span class="p">)</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">assert</span> <span class="n">x</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="free">
+<h2>Free<a class="headerlink" href="#free" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">response</span> <span class="o">=</span> <span class="n">free</span><span class="p">(</span><span class="s2">&quot;Bolstraat and Utrecht and type:adres&quot;</span><span class="p">)</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">165</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
