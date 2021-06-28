@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>locatieserver.schema.lookup &mdash; locatieserver 0.4.0 documentation</title>
+  <title>locatieserver.schema.lookup &mdash; locatieserver 0.4.1 documentation</title>
   
 
   
@@ -69,7 +69,7 @@
             
             
               <div class="version">
-                0.4.0
+                0.4.1
               </div>
             
           
@@ -182,32 +182,32 @@
 <div class="viewcode-block" id="LookupDoc"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.LookupDoc">[docs]</a><span class="k">class</span> <span class="nc">LookupDoc</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Lookup service document&quot;&quot;&quot;</span>
 
-    <span class="n">bron</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">woonplaatscode</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="nb">type</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">woonplaatsnaam</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">huis_nlt</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">openbareruimtetype</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">gemeentecode</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">weergavenaam</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">straatnaam_verkort</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">gemeentenaam</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">identificatie</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">openbareruimte_id</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">provinciecode</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">postcode</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">provincienaam</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">centroide_ll</span><span class="p">:</span> <span class="n">Point</span>
-    <span class="n">nummeraanduiding_id</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">adresseerbaarobject_id</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">huisnummer</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">bron</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">woonplaatscode</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">woonplaatsnaam</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">huis_nlt</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">openbareruimtetype</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">gemeentecode</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">weergavenaam</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">straatnaam_verkort</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="nb">id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">gemeentenaam</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">identificatie</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">openbareruimte_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">provinciecode</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">postcode</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">provincienaam</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">centroide_ll</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Point</span><span class="p">]</span>
+    <span class="n">nummeraanduiding_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">adresseerbaarobject_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">huisnummer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
     <span class="n">huisnummertoevoeging</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
     <span class="n">huisletter</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="n">provincieafkorting</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">centroide_rd</span><span class="p">:</span> <span class="n">Point</span>
-    <span class="n">straatnaam</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">gekoppeld_perceel</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></div>
+    <span class="n">provincieafkorting</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">centroide_rd</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Point</span><span class="p">]</span>
+    <span class="n">straatnaam</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">gekoppeld_perceel</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span></div>
 
 
 <div class="viewcode-block" id="LookupInlineResponse"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.LookupInlineResponse">[docs]</a><span class="k">class</span> <span class="nc">LookupInlineResponse</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>

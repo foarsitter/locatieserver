@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>locatieserver.schema package &mdash; locatieserver 0.4.0 documentation</title>
+  <title>locatieserver.schema package &mdash; locatieserver 0.4.1 documentation</title>
   
 
   
@@ -69,7 +69,7 @@
             
             
               <div class="version">
-                0.4.0
+                0.4.1
               </div>
             
           
@@ -490,38 +490,38 @@
 <span id="locatieserver-schema-lookup-module"></span><h2>locatieserver.schema.lookup module<a class="headerlink" href="#module-locatieserver.schema.lookup" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.lookup.</span></span><span class="sig-name descname"><span class="pre">LookupDoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bron</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatscode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatsnaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huis_nlt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimtetype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentecode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weergavenaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam_verkort</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentenaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">identificatie</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimte_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provinciecode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postcode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincienaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_ll</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nummeraanduiding_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adresseerbaarobject_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummertoevoeging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisletter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincieafkorting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gekoppeld_perceel</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/lookup.html#LookupDoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.lookup.</span></span><span class="sig-name descname"><span class="pre">LookupDoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bron</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatscode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatsnaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huis_nlt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimtetype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentecode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weergavenaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam_verkort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentenaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">identificatie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimte_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provinciecode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincienaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_ll</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nummeraanduiding_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adresseerbaarobject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummertoevoeging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisletter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincieafkorting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_rd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gekoppeld_perceel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/lookup.html#LookupDoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
 <p>Lookup service document</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>bron</strong> (<em>str</em>) – </p></li>
-<li><p><strong>woonplaatscode</strong> (<em>str</em>) – </p></li>
-<li><p><strong>type</strong> (<em>str</em>) – </p></li>
-<li><p><strong>woonplaatsnaam</strong> (<em>str</em>) – </p></li>
-<li><p><strong>huis_nlt</strong> (<em>str</em>) – </p></li>
-<li><p><strong>openbareruimtetype</strong> (<em>str</em>) – </p></li>
-<li><p><strong>gemeentecode</strong> (<em>str</em>) – </p></li>
-<li><p><strong>weergavenaam</strong> (<em>str</em>) – </p></li>
-<li><p><strong>straatnaam_verkort</strong> (<em>str</em>) – </p></li>
-<li><p><strong>id</strong> (<em>str</em>) – </p></li>
-<li><p><strong>gemeentenaam</strong> (<em>str</em>) – </p></li>
-<li><p><strong>identificatie</strong> (<em>str</em>) – </p></li>
-<li><p><strong>openbareruimte_id</strong> (<em>str</em>) – </p></li>
-<li><p><strong>provinciecode</strong> (<em>str</em>) – </p></li>
-<li><p><strong>postcode</strong> (<em>str</em>) – </p></li>
-<li><p><strong>provincienaam</strong> (<em>str</em>) – </p></li>
-<li><p><strong>centroide_ll</strong> (<a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a>) – </p></li>
-<li><p><strong>nummeraanduiding_id</strong> (<em>str</em>) – </p></li>
-<li><p><strong>adresseerbaarobject_id</strong> (<em>str</em>) – </p></li>
-<li><p><strong>huisnummer</strong> (<em>int</em>) – </p></li>
+<li><p><strong>bron</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>woonplaatscode</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>type</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>woonplaatsnaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>huis_nlt</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>openbareruimtetype</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>gemeentecode</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>weergavenaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>straatnaam_verkort</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>gemeentenaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>identificatie</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>openbareruimte_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>provinciecode</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>postcode</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>provincienaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>centroide_ll</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a><em>]</em>) – </p></li>
+<li><p><strong>nummeraanduiding_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>adresseerbaarobject_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>huisnummer</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
 <li><p><strong>huisnummertoevoeging</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>huisletter</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
-<li><p><strong>provincieafkorting</strong> (<em>str</em>) – </p></li>
-<li><p><strong>centroide_rd</strong> (<a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a>) – </p></li>
-<li><p><strong>straatnaam</strong> (<em>str</em>) – </p></li>
-<li><p><strong>gekoppeld_perceel</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>provincieafkorting</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>centroide_rd</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a><em>]</em>) – </p></li>
+<li><p><strong>straatnaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>gekoppeld_perceel</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
@@ -530,42 +530,42 @@
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.adresseerbaarobject_id">
-<span class="sig-name descname"><span class="pre">adresseerbaarobject_id</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.adresseerbaarobject_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">adresseerbaarobject_id</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.adresseerbaarobject_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.bron">
-<span class="sig-name descname"><span class="pre">bron</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.bron" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bron</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.bron" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.centroide_ll">
-<span class="sig-name descname"><span class="pre">centroide_ll</span></span><em class="property"><span class="pre">:</span> <a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_ll" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">centroide_ll</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_ll" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.centroide_rd">
-<span class="sig-name descname"><span class="pre">centroide_rd</span></span><em class="property"><span class="pre">:</span> <a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_rd" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">centroide_rd</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_rd" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.gekoppeld_perceel">
-<span class="sig-name descname"><span class="pre">gekoppeld_perceel</span></span><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.gekoppeld_perceel" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">gekoppeld_perceel</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.gekoppeld_perceel" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.gemeentecode">
-<span class="sig-name descname"><span class="pre">gemeentecode</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.gemeentecode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">gemeentecode</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.gemeentecode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.gemeentenaam">
-<span class="sig-name descname"><span class="pre">gemeentenaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.gemeentenaam" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">gemeentenaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.gemeentenaam" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.huis_nlt">
-<span class="sig-name descname"><span class="pre">huis_nlt</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.huis_nlt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">huis_nlt</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.huis_nlt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -575,7 +575,7 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.huisnummer">
-<span class="sig-name descname"><span class="pre">huisnummer</span></span><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.huisnummer" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">huisnummer</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.huisnummer" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -585,77 +585,77 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.id">
-<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.identificatie">
-<span class="sig-name descname"><span class="pre">identificatie</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.identificatie" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">identificatie</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.identificatie" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.nummeraanduiding_id">
-<span class="sig-name descname"><span class="pre">nummeraanduiding_id</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.nummeraanduiding_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">nummeraanduiding_id</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.nummeraanduiding_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.openbareruimte_id">
-<span class="sig-name descname"><span class="pre">openbareruimte_id</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.openbareruimte_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">openbareruimte_id</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.openbareruimte_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.openbareruimtetype">
-<span class="sig-name descname"><span class="pre">openbareruimtetype</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.openbareruimtetype" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">openbareruimtetype</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.openbareruimtetype" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.postcode">
-<span class="sig-name descname"><span class="pre">postcode</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.postcode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">postcode</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.postcode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.provincieafkorting">
-<span class="sig-name descname"><span class="pre">provincieafkorting</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.provincieafkorting" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">provincieafkorting</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.provincieafkorting" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.provinciecode">
-<span class="sig-name descname"><span class="pre">provinciecode</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.provinciecode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">provinciecode</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.provinciecode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.provincienaam">
-<span class="sig-name descname"><span class="pre">provincienaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.provincienaam" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">provincienaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.provincienaam" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.straatnaam">
-<span class="sig-name descname"><span class="pre">straatnaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.straatnaam" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">straatnaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.straatnaam" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.straatnaam_verkort">
-<span class="sig-name descname"><span class="pre">straatnaam_verkort</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.straatnaam_verkort" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">straatnaam_verkort</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.straatnaam_verkort" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.type">
-<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.type" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.weergavenaam">
-<span class="sig-name descname"><span class="pre">weergavenaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.weergavenaam" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">weergavenaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.weergavenaam" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.woonplaatscode">
-<span class="sig-name descname"><span class="pre">woonplaatscode</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.woonplaatscode" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">woonplaatscode</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.woonplaatscode" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.woonplaatsnaam">
-<span class="sig-name descname"><span class="pre">woonplaatsnaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.woonplaatsnaam" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">woonplaatsnaam</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.woonplaatsnaam" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
