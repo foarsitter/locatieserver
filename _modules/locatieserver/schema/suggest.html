@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>locatieserver.schema.suggest &mdash; locatieserver 0.3.0 documentation</title>
+  <title>locatieserver.schema.suggest &mdash; locatieserver 0.4.0 documentation</title>
   
 
   
@@ -69,7 +69,7 @@
             
             
               <div class="version">
-                0.3.0
+                0.4.0
               </div>
             
           
@@ -178,18 +178,18 @@
 <span class="kn">from</span> <span class="nn">locatieserver.schema.base</span> <span class="kn">import</span> <span class="n">LocatieserverBaseModel</span>
 
 
-<div class="viewcode-block" id="Doc"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.suggest.Doc">[docs]</a><span class="k">class</span> <span class="nc">Doc</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
+<div class="viewcode-block" id="SuggestDoc"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.suggest.SuggestDoc">[docs]</a><span class="k">class</span> <span class="nc">SuggestDoc</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
     <span class="nb">type</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">weergavenaam</span><span class="p">:</span> <span class="nb">str</span>
     <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">score</span><span class="p">:</span> <span class="nb">float</span></div>
 
 
-<div class="viewcode-block" id="Response"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.suggest.Response">[docs]</a><span class="k">class</span> <span class="nc">Response</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
+<div class="viewcode-block" id="SuggestInlineResponse"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.suggest.SuggestInlineResponse">[docs]</a><span class="k">class</span> <span class="nc">SuggestInlineResponse</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
     <span class="n">num_found</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;numFound&quot;</span><span class="p">)</span>
     <span class="n">start</span><span class="p">:</span> <span class="nb">int</span>
     <span class="n">max_score</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;maxScore&quot;</span><span class="p">)</span>
-    <span class="n">docs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Doc</span><span class="p">]</span></div>
+    <span class="n">docs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SuggestDoc</span><span class="p">]</span></div>
 
 
 <div class="viewcode-block" id="Suggest"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.suggest.Suggest">[docs]</a><span class="k">class</span> <span class="nc">Suggest</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
@@ -215,7 +215,9 @@
 
 
 <div class="viewcode-block" id="SuggestResponse"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.suggest.SuggestResponse">[docs]</a><span class="k">class</span> <span class="nc">SuggestResponse</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
-    <span class="n">response</span><span class="p">:</span> <span class="n">Response</span>
+    <span class="sd">&quot;&quot;&quot;Response for the suggest service&quot;&quot;&quot;</span>
+
+    <span class="n">response</span><span class="p">:</span> <span class="n">SuggestInlineResponse</span>
     <span class="n">highlighting</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Suggest</span><span class="p">]</span>
     <span class="n">spellcheck</span><span class="p">:</span> <span class="n">Spellcheck</span></div>
 

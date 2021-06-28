@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>locatieserver.schema.lookup &mdash; locatieserver 0.3.0 documentation</title>
+  <title>locatieserver.schema.lookup &mdash; locatieserver 0.4.0 documentation</title>
   
 
   
@@ -69,7 +69,7 @@
             
             
               <div class="version">
-                0.3.0
+                0.4.0
               </div>
             
           
@@ -178,7 +178,9 @@
 <span class="kn">from</span> <span class="nn">locatieserver.schema.base</span> <span class="kn">import</span> <span class="n">LocatieserverBaseModel</span>
 
 
-<div class="viewcode-block" id="Doc"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.Doc">[docs]</a><span class="k">class</span> <span class="nc">Doc</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
+<div class="viewcode-block" id="LookupDoc"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.LookupDoc">[docs]</a><span class="k">class</span> <span class="nc">LookupDoc</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Lookup service document&quot;&quot;&quot;</span>
+
     <span class="n">bron</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">woonplaatscode</span><span class="p">:</span> <span class="nb">str</span>
     <span class="nb">type</span><span class="p">:</span> <span class="nb">str</span>
@@ -205,14 +207,16 @@
     <span class="n">gekoppeld_perceel</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></div>
 
 
-<div class="viewcode-block" id="Response"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.Response">[docs]</a><span class="k">class</span> <span class="nc">Response</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
+<div class="viewcode-block" id="LookupInlineResponse"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.LookupInlineResponse">[docs]</a><span class="k">class</span> <span class="nc">LookupInlineResponse</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
     <span class="n">num_found</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;numFound&quot;</span><span class="p">)</span>
     <span class="n">start</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">docs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Doc</span><span class="p">]</span></div>
+    <span class="n">docs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LookupDoc</span><span class="p">]</span></div>
 
 
 <div class="viewcode-block" id="LookupResponse"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.lookup.LookupResponse">[docs]</a><span class="k">class</span> <span class="nc">LookupResponse</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
-    <span class="n">response</span><span class="p">:</span> <span class="n">Response</span></div>
+    <span class="sd">&quot;&quot;&quot;Response for the lookup service&quot;&quot;&quot;</span>
+
+    <span class="n">response</span><span class="p">:</span> <span class="n">LookupInlineResponse</span></div>
 </pre></div>
 
            </div>
