@@ -2,4 +2,4 @@
 
 __author__ = "Jelmer Draaijer"
 __email__ = "info@jelmert.nl"
-__version__ = "0.3.0"
+__version__ = "0.4.0"
