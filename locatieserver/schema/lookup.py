@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List
+from typing import List, Optional
 
 from pydantic import Field
 
@@ -30,6 +30,8 @@ class LookupDoc(LocatieserverBaseModel):
     nummeraanduiding_id: str
     adresseerbaarobject_id: str
     huisnummer: int
+    huisnummertoevoeging: Optional[str] = ""
+    huisletter: Optional[str] = ""
     provincieafkorting: str
     centroide_rd: str
     straatnaam: str
