@@ -5,6 +5,7 @@ from typing import List
 from pydantic import Field
 
 from locatieserver.schema.base import LocatieserverBaseModel
+from locatieserver.schema.utils import Point
 
 
 class FreeDoc(LocatieserverBaseModel):
@@ -26,12 +27,12 @@ class FreeDoc(LocatieserverBaseModel):
     provinciecode: str
     postcode: str
     provincienaam: str
-    centroide_ll: str
+    centroide_ll: Point
     nummeraanduiding_id: str
     adresseerbaarobject_id: str
     huisnummer: int
     provincieafkorting: str
-    centroide_rd: str
+    centroide_rd: Point
     straatnaam: str
     gekoppeld_perceel: List[str]
     score: float
