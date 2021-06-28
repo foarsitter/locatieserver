@@ -7,7 +7,9 @@ from pydantic import Field
 from locatieserver.schema.base import LocatieserverBaseModel
 
 
-class Doc(LocatieserverBaseModel):
+class LookupDoc(LocatieserverBaseModel):
+    """Lookup service document"""
+
     bron: str
     woonplaatscode: str
     type: str
@@ -34,11 +36,13 @@ class Doc(LocatieserverBaseModel):
     gekoppeld_perceel: List[str]
 
 
-class Response(LocatieserverBaseModel):
+class LookupInlineResponse(LocatieserverBaseModel):
     num_found: int = Field(..., alias="numFound")
     start: int
-    docs: List[Doc]
+    docs: List[LookupDoc]
 
 
 class LookupResponse(LocatieserverBaseModel):
-    response: Response
+    """Response for the lookup service"""
+
+    response: LookupInlineResponse

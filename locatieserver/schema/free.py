@@ -7,7 +7,9 @@ from pydantic import Field
 from locatieserver.schema.base import LocatieserverBaseModel
 
 
-class Doc(LocatieserverBaseModel):
+class FreeDoc(LocatieserverBaseModel):
+    """Free service document"""
+
     bron: str
     woonplaatscode: str
     type: str
@@ -35,12 +37,14 @@ class Doc(LocatieserverBaseModel):
     score: float
 
 
-class Response(LocatieserverBaseModel):
+class FreeInlineResponse(LocatieserverBaseModel):
     num_found: int = Field(..., alias="numFound")
     start: int
     max_score: float = Field(..., alias="maxScore")
-    docs: List[Doc]
+    docs: List[FreeDoc]
 
 
 class FreeResponse(LocatieserverBaseModel):
-    response: Response
+    """Response for the free service"""
+
+    response: FreeInlineResponse

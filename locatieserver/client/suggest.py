@@ -1,7 +1,7 @@
 from typing import Optional
 
 from locatieserver.client.utils import filter_defaults, http_get
-from locatieserver.schema import SuggestResponse
+from locatieserver.schema.suggest import SuggestResponse
 
 PATH = "/suggest"
 
