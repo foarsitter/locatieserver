@@ -176,6 +176,7 @@
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">Field</span>
 
 <span class="kn">from</span> <span class="nn">locatieserver.schema.base</span> <span class="kn">import</span> <span class="n">LocatieserverBaseModel</span>
+<span class="kn">from</span> <span class="nn">locatieserver.schema.utils</span> <span class="kn">import</span> <span class="n">Point</span>
 
 
 <div class="viewcode-block" id="FreeDoc"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.free.FreeDoc">[docs]</a><span class="k">class</span> <span class="nc">FreeDoc</span><span class="p">(</span><span class="n">LocatieserverBaseModel</span><span class="p">):</span>
@@ -197,12 +198,12 @@
     <span class="n">provinciecode</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">postcode</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">provincienaam</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">centroide_ll</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">centroide_ll</span><span class="p">:</span> <span class="n">Point</span>
     <span class="n">nummeraanduiding_id</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">adresseerbaarobject_id</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">huisnummer</span><span class="p">:</span> <span class="nb">int</span>
     <span class="n">provincieafkorting</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">centroide_rd</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">centroide_rd</span><span class="p">:</span> <span class="n">Point</span>
     <span class="n">straatnaam</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">gekoppeld_perceel</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
     <span class="n">score</span><span class="p">:</span> <span class="nb">float</span></div>
