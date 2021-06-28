@@ -13,3 +13,21 @@ def test_point():
 
     assert centroide_ll.x == "5.10696041"
     assert centroide_ll.y == "52.06415055"
+
+
+def test_point_empty():
+    centroide_ll = Point("")
+
+    assert centroide_ll.x is None
+
+
+def test_point_non_point_value():
+    centroide_ll = Point("XYZ(1.0 2.0)")
+
+    assert centroide_ll.x == "1.0"
+
+
+def test_point_string_value():
+    centroide_ll = Point("ABC")
+
+    assert centroide_ll.x is None

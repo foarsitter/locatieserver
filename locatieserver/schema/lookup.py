@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-from typing import List
+from typing import List, Optional
 
 from pydantic import Field
 
 from locatieserver.schema.base import LocatieserverBaseModel
+from locatieserver.schema.utils import Point
 
 
 class LookupDoc(LocatieserverBaseModel):
@@ -26,12 +27,14 @@ class LookupDoc(LocatieserverBaseModel):
     provinciecode: str
     postcode: str
     provincienaam: str
-    centroide_ll: str
+    centroide_ll: Point
     nummeraanduiding_id: str
     adresseerbaarobject_id: str
     huisnummer: int
+    huisnummertoevoeging: Optional[str] = ""
+    huisletter: Optional[str] = ""
     provincieafkorting: str
-    centroide_rd: str
+    centroide_rd: Point
     straatnaam: str
     gekoppeld_perceel: List[str]
 
