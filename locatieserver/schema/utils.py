@@ -1,7 +1,7 @@
 import re
 from typing import Optional
 
-point_matcher = re.compile("([+-]?[0-9]+[.][0-9]+) ([+-]?[0-9]+[.][0-9]+)")
+point_matcher = re.compile("([+-]?[0-9]+[.]*[0-9]*) ([+-]?[0-9]+[.]*[0-9]*)")
 
 
 class Point(str):
