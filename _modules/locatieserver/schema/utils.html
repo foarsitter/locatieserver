@@ -81,7 +81,7 @@
 <span></span><span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
 
-<span class="n">point_matcher</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;([+-]?[0-9]+[.][0-9]+) ([+-]?[0-9]+[.][0-9]+)&quot;</span><span class="p">)</span>
+<span class="n">point_matcher</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;([+-]?[0-9]+[.]*[0-9]*) ([+-]?[0-9]+[.]*[0-9]*)&quot;</span><span class="p">)</span>
 
 
 <div class="viewcode-block" id="Point"><a class="viewcode-back" href="../../../locatieserver.schema.html#locatieserver.schema.utils.Point">[docs]</a><span class="k">class</span> <span class="nc">Point</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
