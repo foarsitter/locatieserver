@@ -14,5 +14,5 @@ full_name: Jelmer Draaijer
 email: info@jelmert.nl
 project_name: locatieserver
 project_short_description: Locatieserver api client
-version: 0.4.1
+version: 0.4.2
 license: MIT
