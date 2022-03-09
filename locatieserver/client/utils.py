@@ -32,11 +32,11 @@ def filter_defaults(func, **kwargs):
     return non_default_values
 
 
-class LocatieserverException(Exception):
+class LocatieserverError(Exception):
     pass
 
 
-class LocatieserverErrorResponse(LocatieserverException):
+class LocatieserverResponseError(LocatieserverError):
     pass
 
 
@@ -46,13 +46,13 @@ def http_get(path, params):
     content_type = response.headers.get("Content-Type", None)
 
     if "json" not in content_type:
-        raise LocatieserverException(f"Cannot handle content-types other then JSON, received {content_type}.")
+        raise LocatieserverError(f"Cannot handle content-types other then JSON, received {content_type}.")
 
     if response.status_code == 200:
         return response
     elif response.status_code == 400:
         error_response = ErrorResponse.parse_raw(response.content)
 
-        raise LocatieserverErrorResponse(error_response.error.msg)
+        raise LocatieserverResponseError(error_response.error.msg)
 
     return response
