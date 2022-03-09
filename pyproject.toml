@@ -27,7 +27,7 @@ httpx = "^0.18.2"
 [tool.poetry.dev-dependencies]
 respx = "^0.17.1"
 pytest = "^7.0.1"
-coverage = {extras = ["toml"], version = "^5.3"}
+coverage = {extras = ["toml"], version = "^6.2"}
 safety = "^1.9.0"
 mypy = "^0.910"
 typeguard = "^2.12.0"
