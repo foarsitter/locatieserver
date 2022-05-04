@@ -1,8 +1,12 @@
 from locatieserver.client import lookup
+from locatieserver.client.utils import safe_result
 
 
+@safe_result
 def test_lookup():
 
-    x = lookup("adr-bf54db721969487ed33ba84d9973c702")
+    result = lookup("adr-bf54db721969487ed33ba84d9973c702")
 
-    assert x.response.num_found == 1
+    assert result.response.num_found == 1
+
+    return result

@@ -1,8 +1,12 @@
 from locatieserver.client import free
+from locatieserver.client.utils import safe_result
 
 
+@safe_result
 def test_free():
 
-    response = free("Bolstraat and Utrecht and type:adres")
+    result = free("Bolstraat and Utrecht and type:adres")
 
-    assert response.response.num_found == 165
+    assert result.response.num_found == 165
+
+    return result

@@ -1,7 +1,10 @@
 import inspect
+from functools import wraps
+from pathlib import Path
 from typing import Any, Callable, Dict
 
 import httpx
+from pydantic import BaseModel
 
 from locatieserver.client.config import BASE_URL
 from locatieserver.schema.error import ErrorResponse
@@ -56,3 +59,19 @@ def http_get(path, params):
         raise LocatieserverResponseError(error_response.error.msg)
 
     return response
+
+
+def write_response(name: str, result: BaseModel):
+
+    output = Path(__file__).parent / "tests" / f"{name}.json"
+    output.write_text(result.json(indent=2))
+
+
+def safe_result(f):
+    @wraps(f)
+    def wrapper(*args, **kwds):
+        response = f(*args, **kwds)
+        write_response(f.__name__, response)
+        return response
+
+    return wrapper

@@ -1,0 +1,105 @@
+{
+    "response": {
+        "num_found": 140,
+        "start": 0,
+        "max_score": 21.257793,
+        "docs": [
+            {
+                "type": "weg",
+                "weergavenaam": "Westerein, Drogeham",
+                "id": "weg-2e2de9dea84b8b03dea93ee39c196138",
+                "score": 21.257793
+            },
+            {
+                "type": "weg",
+                "weergavenaam": "Westerein, Garyp",
+                "id": "weg-fd5b7d1e84d9a83c9980340bf03cd9a7",
+                "score": 21.257793
+            },
+            {
+                "type": "weg",
+                "weergavenaam": "Westerein, Harich",
+                "id": "weg-c29e1b2a94633a796e94f395a4eaa216",
+                "score": 21.257793
+            },
+            {
+                "type": "weg",
+                "weergavenaam": "Westerein, Nijega",
+                "id": "weg-4de4533d26f1a1af9786e9fc76f223c6",
+                "score": 21.257793
+            },
+            {
+                "type": "weg",
+                "weergavenaam": "Westerein, Tersoal",
+                "id": "weg-e013fb12c903d5a397f69ce4529a42ff",
+                "score": 21.257793
+            },
+            {
+                "type": "weg",
+                "weergavenaam": "Westerein, Wjelsryp",
+                "id": "weg-fdc959b3d5a73e5f1fb8b9e571cbe8bf",
+                "score": 21.257793
+            },
+            {
+                "type": "weg",
+                "weergavenaam": "Westereind, Wachtum",
+                "id": "weg-07083ac3a0794b09c9c5536ef82f5575",
+                "score": 14.797109
+            },
+            {
+                "type": "postcode",
+                "weergavenaam": "Westerein, 8571GB Harich",
+                "id": "pcd-013e663f49ac0dc23560b689f43c42a7",
+                "score": 11.873351
+            },
+            {
+                "type": "postcode",
+                "weergavenaam": "Westerein, 8842LA Wjelsryp",
+                "id": "pcd-5f110aeabc125530b72965f30920c697",
+                "score": 11.873351
+            },
+            {
+                "type": "postcode",
+                "weergavenaam": "Westerein, 8842LB Wjelsryp",
+                "id": "pcd-d8a5a9b4a5fd904913d03e876a2b1d6b",
+                "score": 11.873351
+            }
+        ]
+    },
+    "highlighting": {
+        "weg-2e2de9dea84b8b03dea93ee39c196138": {
+            "suggest": ["<b>Westerein</b>, Drogeham"]
+        },
+        "weg-fd5b7d1e84d9a83c9980340bf03cd9a7": {
+            "suggest": ["<b>Westerein</b>, Garyp"]
+        },
+        "weg-c29e1b2a94633a796e94f395a4eaa216": {
+            "suggest": ["<b>Westerein</b>, Harich"]
+        },
+        "weg-4de4533d26f1a1af9786e9fc76f223c6": {
+            "suggest": ["<b>Westerein</b>, Nijega"]
+        },
+        "weg-e013fb12c903d5a397f69ce4529a42ff": {
+            "suggest": ["<b>Westerein</b>, Tersoal"]
+        },
+        "weg-fdc959b3d5a73e5f1fb8b9e571cbe8bf": {
+            "suggest": ["<b>Westerein</b>, Wjelsryp"]
+        },
+        "weg-07083ac3a0794b09c9c5536ef82f5575": {
+            "suggest": ["<b>Westereind</b>, Wachtum"]
+        },
+        "pcd-013e663f49ac0dc23560b689f43c42a7": {
+            "suggest": ["<b>Westerein</b>, 8571 GB Harich"]
+        },
+        "pcd-5f110aeabc125530b72965f30920c697": {
+            "suggest": ["<b>Westerein</b>, 8842 LA Wjelsryp"]
+        },
+        "pcd-d8a5a9b4a5fd904913d03e876a2b1d6b": {
+            "suggest": ["<b>Westerein</b>, 8842 LB Wjelsryp"]
+        }
+    },
+    "spellcheck": {
+        "suggestions": [],
+        "collations": []
+    }
+}
