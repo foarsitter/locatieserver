@@ -79,13 +79,17 @@
              
   <h1>Source code for locatieserver.client.tests.test_lookup</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">locatieserver.client</span> <span class="kn">import</span> <span class="n">lookup</span>
+<span class="kn">from</span> <span class="nn">locatieserver.client.utils</span> <span class="kn">import</span> <span class="n">safe_result</span>
 
 
-<div class="viewcode-block" id="test_lookup"><a class="viewcode-back" href="../../../../locatieserver.client.tests.html#locatieserver.client.tests.test_lookup.test_lookup">[docs]</a><span class="k">def</span> <span class="nf">test_lookup</span><span class="p">():</span>
+<div class="viewcode-block" id="test_lookup"><a class="viewcode-back" href="../../../../locatieserver.client.tests.html#locatieserver.client.tests.test_lookup.test_lookup">[docs]</a><span class="nd">@safe_result</span>
+<span class="k">def</span> <span class="nf">test_lookup</span><span class="p">():</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">(</span><span class="s2">&quot;adr-bf54db721969487ed33ba84d9973c702&quot;</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">lookup</span><span class="p">(</span><span class="s2">&quot;adr-bf54db721969487ed33ba84d9973c702&quot;</span><span class="p">)</span>
 
-    <span class="k">assert</span> <span class="n">x</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">1</span></div>
+    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">result</span></div>
 </pre></div>
 
            </div>

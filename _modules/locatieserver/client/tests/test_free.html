@@ -79,13 +79,17 @@
              
   <h1>Source code for locatieserver.client.tests.test_free</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">locatieserver.client</span> <span class="kn">import</span> <span class="n">free</span>
+<span class="kn">from</span> <span class="nn">locatieserver.client.utils</span> <span class="kn">import</span> <span class="n">safe_result</span>
 
 
-<div class="viewcode-block" id="test_free"><a class="viewcode-back" href="../../../../locatieserver.client.tests.html#locatieserver.client.tests.test_free.test_free">[docs]</a><span class="k">def</span> <span class="nf">test_free</span><span class="p">():</span>
+<div class="viewcode-block" id="test_free"><a class="viewcode-back" href="../../../../locatieserver.client.tests.html#locatieserver.client.tests.test_free.test_free">[docs]</a><span class="nd">@safe_result</span>
+<span class="k">def</span> <span class="nf">test_free</span><span class="p">():</span>
 
-    <span class="n">response</span> <span class="o">=</span> <span class="n">free</span><span class="p">(</span><span class="s2">&quot;Bolstraat and Utrecht and type:adres&quot;</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">free</span><span class="p">(</span><span class="s2">&quot;Bolstraat and Utrecht and type:adres&quot;</span><span class="p">)</span>
 
-    <span class="k">assert</span> <span class="n">response</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">165</span></div>
+    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">num_found</span> <span class="o">==</span> <span class="mi">165</span>
+
+    <span class="k">return</span> <span class="n">result</span></div>
 </pre></div>
 
            </div>
