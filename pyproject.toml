@@ -22,7 +22,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.6.1"
 pydantic = "^1.8.2"
-httpx = "^0.18.2"
+httpx = ">=0.18.2,<0.21.0"
 
 [tool.poetry.dev-dependencies]
 respx = "^0.17.1"
