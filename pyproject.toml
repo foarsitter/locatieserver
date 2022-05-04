@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "locatieserver"
-version = "0.4.2"  # <<COOKIETEMPLE_FORCE_BUMP>>
+version = "0.4.3"  # <<COOKIETEMPLE_FORCE_BUMP>>
 description = "Locatieserver api client"
 authors = ["Jelmer Draaijer <info@jelmert.nl>"]
 license = "MIT"
