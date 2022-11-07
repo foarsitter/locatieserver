@@ -203,7 +203,7 @@ python-versions = ">=3.6,<4.0"
 
 [[package]]
 name = "datamodel-code-generator"
-version = "0.11.20"
+version = "0.13.5"
 description = "Datamodel Code Generator"
 category = "dev"
 optional = false
@@ -726,14 +726,15 @@ python-versions = ">=2.6"
 
 [[package]]
 name = "pep8-naming"
-version = "0.13.2"
+version = "0.12.1"
 description = "Check PEP-8 naming conventions, plugin for flake8"
 category = "dev"
 optional = false
-python-versions = ">=3.7"
+python-versions = "*"
 
 [package.dependencies]
 flake8 = ">=3.9.1"
+flake8-polyfill = ">=1.0.2,<2"
 
 [[package]]
 name = "platformdirs"
@@ -1429,7 +1430,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.1"
-content-hash = "c9e43132cb4b7310aee53c4388216961f738143d5c3fca67a5a4c40a03ab78d7"
+content-hash = "500596cffca39f3a601600b08009f343351c58f6e780f67ae7056dd504dac6c7"
 
 [metadata.files]
 alabaster = [
@@ -1568,8 +1569,8 @@ darglint = [
     {file = "darglint-1.8.1.tar.gz", hash = "sha256:080d5106df149b199822e7ee7deb9c012b49891538f14a11be681044f0bb20da"},
 ]
 datamodel-code-generator = [
-    {file = "datamodel-code-generator-0.11.20.tar.gz", hash = "sha256:aac5a5afa9a3170dbdca0fbdd3cdb5bf372d60f506c624af0699fb8d8c06c8cc"},
-    {file = "datamodel_code_generator-0.11.20-py3-none-any.whl", hash = "sha256:ee2e29cd8be3e15deb6d588f6d1b5bff785a765c72b9d2755bd8ea7affb862b7"},
+    {file = "datamodel_code_generator-0.13.5-py3-none-any.whl", hash = "sha256:32d50923f3e1f7e35c52a960c3bc828c6e96e832a871102dbe5d2099bfbf8c4b"},
+    {file = "datamodel_code_generator-0.13.5.tar.gz", hash = "sha256:6987e2383adf12221a9de9b55914e81b0a5cae052e2a00f2c7f0c0d7c91de37b"},
 ]
 distlib = [
     {file = "distlib-0.3.6-py2.py3-none-any.whl", hash = "sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"},
@@ -1790,8 +1791,8 @@ pbr = [
     {file = "pbr-5.11.0.tar.gz", hash = "sha256:b97bc6695b2aff02144133c2e7399d5885223d42b7912ffaec2ca3898e673bfe"},
 ]
 pep8-naming = [
-    {file = "pep8-naming-0.13.2.tar.gz", hash = "sha256:93eef62f525fd12a6f8c98f4dcc17fa70baae2f37fa1f73bec00e3e44392fa48"},
-    {file = "pep8_naming-0.13.2-py3-none-any.whl", hash = "sha256:59e29e55c478db69cffbe14ab24b5bd2cd615c0413edf790d47d3fb7ba9a4e23"},
+    {file = "pep8-naming-0.12.1.tar.gz", hash = "sha256:bb2455947757d162aa4cad55dba4ce029005cd1692f2899a21d51d8630ca7841"},
+    {file = "pep8_naming-0.12.1-py2.py3-none-any.whl", hash = "sha256:4a8daeaeb33cfcde779309fc0c9c0a68a3bbe2ad8a8308b763c5068f86eb9f37"},
 ]
 platformdirs = [
     {file = "platformdirs-2.5.2-py3-none-any.whl", hash = "sha256:027d8e83a2d7de06bbac4e5ef7e023c02b863d7ea5d079477e722bb41ab25788"},
