@@ -17,7 +17,9 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/dark_mode_js/default_dark.js"></script>
         <script src="_static/dark_mode_js/theme_switcher.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -67,8 +69,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>locatieserver.schema package</li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">locatieserver.schema package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/locatieserver.schema.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -79,14 +81,21 @@
            <div itemprop="articleBody">
              
   <section id="locatieserver-schema-package">
-<h1>locatieserver.schema package<a class="headerlink" href="#locatieserver-schema-package" title="Permalink to this headline"></a></h1>
+<h1>locatieserver.schema package<a class="headerlink" href="#locatieserver-schema-package" title="Permalink to this heading"></a></h1>
 <section id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline"></a></h2>
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="locatieserver.schema.tests.html">locatieserver.schema.tests package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="locatieserver.schema.tests.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="locatieserver.schema.tests.html#module-locatieserver.schema.tests.test_utils">locatieserver.schema.tests.test_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locatieserver.schema.tests.html#module-locatieserver.schema.tests.test_utils">locatieserver.schema.tests.test_utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="locatieserver.schema.tests.html#locatieserver.schema.tests.test_utils.test_point"><code class="docutils literal notranslate"><span class="pre">test_point()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="locatieserver.schema.tests.html#locatieserver.schema.tests.test_utils.test_point_empty"><code class="docutils literal notranslate"><span class="pre">test_point_empty()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="locatieserver.schema.tests.html#locatieserver.schema.tests.test_utils.test_point_non_point_value"><code class="docutils literal notranslate"><span class="pre">test_point_non_point_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="locatieserver.schema.tests.html#locatieserver.schema.tests.test_utils.test_point_regex"><code class="docutils literal notranslate"><span class="pre">test_point_regex()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="locatieserver.schema.tests.html#locatieserver.schema.tests.test_utils.test_point_string_value"><code class="docutils literal notranslate"><span class="pre">test_point_string_value()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="locatieserver.schema.tests.html#module-locatieserver.schema.tests">Module contents</a></li>
 </ul>
 </li>
@@ -94,29 +103,26 @@
 </div>
 </section>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-locatieserver.schema.base">
-<span id="locatieserver-schema-base-module"></span><h2>locatieserver.schema.base module<a class="headerlink" href="#module-locatieserver.schema.base" title="Permalink to this headline"></a></h2>
+<span id="locatieserver-schema-base-module"></span><h2>locatieserver.schema.base module<a class="headerlink" href="#module-locatieserver.schema.base" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.base.LocatieserverBaseModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.base.</span></span><span class="sig-name descname"><span class="pre">LocatieserverBaseModel</span></span><a class="reference internal" href="_modules/locatieserver/schema/base.html#LocatieserverBaseModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.base.LocatieserverBaseModel" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pydantic.main.BaseModel</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
 <p>BaseModel replacement for sharing the configuration across the different schemas.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>None</p>
-</dd>
 </dl>
 </dd></dl>
 
 </section>
 <section id="module-locatieserver.schema.error">
-<span id="locatieserver-schema-error-module"></span><h2>locatieserver.schema.error module<a class="headerlink" href="#module-locatieserver.schema.error" title="Permalink to this headline"></a></h2>
+<span id="locatieserver-schema-error-module"></span><h2>locatieserver.schema.error module<a class="headerlink" href="#module-locatieserver.schema.error" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.error.Error">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.error.</span></span><span class="sig-name descname"><span class="pre">Error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/error.html#Error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.error.Error" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -124,9 +130,6 @@
 <li><p><strong>msg</strong> (<em>str</em>) – </p></li>
 <li><p><strong>code</strong> (<em>int</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -149,29 +152,26 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.error.ErrorResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.error.</span></span><span class="sig-name descname"><span class="pre">ErrorResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/error.html#ErrorResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.error.ErrorResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>error</strong> (<a class="reference internal" href="#locatieserver.schema.error.Error" title="locatieserver.schema.error.Error"><em>locatieserver.schema.error.Error</em></a>) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
+<dd class="field-odd"><p><strong>error</strong> (<a class="reference internal" href="#locatieserver.schema.error.Error" title="locatieserver.schema.error.Error"><em>Error</em></a>) – </p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.error.ErrorResponse.error">
-<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.error.Error" title="locatieserver.schema.error.Error"><span class="pre">locatieserver.schema.error.Error</span></a></em><a class="headerlink" href="#locatieserver.schema.error.ErrorResponse.error" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.error.Error" title="locatieserver.schema.error.Error"><span class="pre">Error</span></a></em><a class="headerlink" href="#locatieserver.schema.error.ErrorResponse.error" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 </section>
 <section id="module-locatieserver.schema.free">
-<span id="locatieserver-schema-free-module"></span><h2>locatieserver.schema.free module<a class="headerlink" href="#module-locatieserver.schema.free" title="Permalink to this headline"></a></h2>
+<span id="locatieserver-schema-free-module"></span><h2>locatieserver.schema.free module<a class="headerlink" href="#module-locatieserver.schema.free" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeDoc">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.free.</span></span><span class="sig-name descname"><span class="pre">FreeDoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bron</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatscode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatsnaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huis_nlt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimtetype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentecode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weergavenaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam_verkort</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentenaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">identificatie</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimte_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provinciecode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postcode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincienaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_ll</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nummeraanduiding_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adresseerbaarobject_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincieafkorting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_rd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gekoppeld_perceel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/free.html#FreeDoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.free.FreeDoc" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <p>Free service document</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -192,19 +192,16 @@
 <li><p><strong>provinciecode</strong> (<em>str</em>) – </p></li>
 <li><p><strong>postcode</strong> (<em>str</em>) – </p></li>
 <li><p><strong>provincienaam</strong> (<em>str</em>) – </p></li>
-<li><p><strong>centroide_ll</strong> (<a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a>) – </p></li>
+<li><p><strong>centroide_ll</strong> (<a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>Point</em></a>) – </p></li>
 <li><p><strong>nummeraanduiding_id</strong> (<em>str</em>) – </p></li>
 <li><p><strong>adresseerbaarobject_id</strong> (<em>str</em>) – </p></li>
 <li><p><strong>huisnummer</strong> (<em>int</em>) – </p></li>
 <li><p><strong>provincieafkorting</strong> (<em>str</em>) – </p></li>
-<li><p><strong>centroide_rd</strong> (<a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a>) – </p></li>
+<li><p><strong>centroide_rd</strong> (<a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>Point</em></a>) – </p></li>
 <li><p><strong>straatnaam</strong> (<em>str</em>) – </p></li>
 <li><p><strong>gekoppeld_perceel</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>score</strong> (<em>float</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -219,12 +216,12 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeDoc.centroide_ll">
-<span class="sig-name descname"><span class="pre">centroide_ll</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a></em><a class="headerlink" href="#locatieserver.schema.free.FreeDoc.centroide_ll" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">centroide_ll</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">Point</span></a></em><a class="headerlink" href="#locatieserver.schema.free.FreeDoc.centroide_ll" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeDoc.centroide_rd">
-<span class="sig-name descname"><span class="pre">centroide_rd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a></em><a class="headerlink" href="#locatieserver.schema.free.FreeDoc.centroide_rd" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">centroide_rd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">Point</span></a></em><a class="headerlink" href="#locatieserver.schema.free.FreeDoc.centroide_rd" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -337,23 +334,20 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeInlineResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.free.</span></span><span class="sig-name descname"><span class="pre">FreeInlineResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFound</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxScore</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/free.html#FreeInlineResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.free.FreeInlineResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>numFound</strong> (<em>int</em>) – </p></li>
 <li><p><strong>start</strong> (<em>int</em>) – </p></li>
 <li><p><strong>maxScore</strong> (<em>float</em>) – </p></li>
-<li><p><strong>docs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#locatieserver.schema.free.FreeDoc" title="locatieserver.schema.free.FreeDoc"><em>locatieserver.schema.free.FreeDoc</em></a><em>]</em>) – </p></li>
+<li><p><strong>docs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#locatieserver.schema.free.FreeDoc" title="locatieserver.schema.free.FreeDoc"><em>FreeDoc</em></a><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeInlineResponse.docs">
-<span class="sig-name descname"><span class="pre">docs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.free.FreeDoc" title="locatieserver.schema.free.FreeDoc"><span class="pre">locatieserver.schema.free.FreeDoc</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.free.FreeInlineResponse.docs" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">docs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.free.FreeDoc" title="locatieserver.schema.free.FreeDoc"><span class="pre">FreeDoc</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.free.FreeInlineResponse.docs" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -376,30 +370,27 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.free.</span></span><span class="sig-name descname"><span class="pre">FreeResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/free.html#FreeResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.free.FreeResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <p>Response for the free service</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>response</strong> (<a class="reference internal" href="#locatieserver.schema.free.FreeInlineResponse" title="locatieserver.schema.free.FreeInlineResponse"><em>locatieserver.schema.free.FreeInlineResponse</em></a>) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
+<dd class="field-odd"><p><strong>response</strong> (<a class="reference internal" href="#locatieserver.schema.free.FreeInlineResponse" title="locatieserver.schema.free.FreeInlineResponse"><em>FreeInlineResponse</em></a>) – </p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.free.FreeResponse.response">
-<span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.free.FreeInlineResponse" title="locatieserver.schema.free.FreeInlineResponse"><span class="pre">locatieserver.schema.free.FreeInlineResponse</span></a></em><a class="headerlink" href="#locatieserver.schema.free.FreeResponse.response" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.free.FreeInlineResponse" title="locatieserver.schema.free.FreeInlineResponse"><span class="pre">FreeInlineResponse</span></a></em><a class="headerlink" href="#locatieserver.schema.free.FreeResponse.response" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 </section>
 <section id="module-locatieserver.schema.lookup">
-<span id="locatieserver-schema-lookup-module"></span><h2>locatieserver.schema.lookup module<a class="headerlink" href="#module-locatieserver.schema.lookup" title="Permalink to this headline"></a></h2>
+<span id="locatieserver-schema-lookup-module"></span><h2>locatieserver.schema.lookup module<a class="headerlink" href="#module-locatieserver.schema.lookup" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.lookup.</span></span><span class="sig-name descname"><span class="pre">LookupDoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bron</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatscode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">woonplaatsnaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huis_nlt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimtetype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentecode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weergavenaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam_verkort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gemeentenaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">identificatie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">openbareruimte_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provinciecode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postcode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincienaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_ll</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nummeraanduiding_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adresseerbaarobject_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisnummertoevoeging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huisletter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">provincieafkorting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroide_rd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">straatnaam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gekoppeld_perceel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/lookup.html#LookupDoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <p>Lookup service document</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -420,20 +411,17 @@
 <li><p><strong>provinciecode</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>postcode</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>provincienaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
-<li><p><strong>centroide_ll</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a><em>]</em>) – </p></li>
+<li><p><strong>centroide_ll</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>Point</em></a><em>]</em>) – </p></li>
 <li><p><strong>nummeraanduiding_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>adresseerbaarobject_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>huisnummer</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
 <li><p><strong>huisnummertoevoeging</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>huisletter</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>provincieafkorting</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
-<li><p><strong>centroide_rd</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>locatieserver.schema.utils.Point</em></a><em>]</em>) – </p></li>
+<li><p><strong>centroide_rd</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><em>Point</em></a><em>]</em>) – </p></li>
 <li><p><strong>straatnaam</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>gekoppeld_perceel</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -448,12 +436,12 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.centroide_ll">
-<span class="sig-name descname"><span class="pre">centroide_ll</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_ll" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">centroide_ll</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">Point</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_ll" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupDoc.centroide_rd">
-<span class="sig-name descname"><span class="pre">centroide_rd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">locatieserver.schema.utils.Point</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_rd" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">centroide_rd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.utils.Point" title="locatieserver.schema.utils.Point"><span class="pre">Point</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupDoc.centroide_rd" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -571,22 +559,19 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupInlineResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.lookup.</span></span><span class="sig-name descname"><span class="pre">LookupInlineResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFound</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/lookup.html#LookupInlineResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.lookup.LookupInlineResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>numFound</strong> (<em>int</em>) – </p></li>
 <li><p><strong>start</strong> (<em>int</em>) – </p></li>
-<li><p><strong>docs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#locatieserver.schema.lookup.LookupDoc" title="locatieserver.schema.lookup.LookupDoc"><em>locatieserver.schema.lookup.LookupDoc</em></a><em>]</em>) – </p></li>
+<li><p><strong>docs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#locatieserver.schema.lookup.LookupDoc" title="locatieserver.schema.lookup.LookupDoc"><em>LookupDoc</em></a><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupInlineResponse.docs">
-<span class="sig-name descname"><span class="pre">docs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.lookup.LookupDoc" title="locatieserver.schema.lookup.LookupDoc"><span class="pre">locatieserver.schema.lookup.LookupDoc</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupInlineResponse.docs" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">docs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.lookup.LookupDoc" title="locatieserver.schema.lookup.LookupDoc"><span class="pre">LookupDoc</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupInlineResponse.docs" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -604,30 +589,27 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.lookup.</span></span><span class="sig-name descname"><span class="pre">LookupResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/lookup.html#LookupResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.lookup.LookupResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <p>Response for the lookup service</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>response</strong> (<a class="reference internal" href="#locatieserver.schema.lookup.LookupInlineResponse" title="locatieserver.schema.lookup.LookupInlineResponse"><em>locatieserver.schema.lookup.LookupInlineResponse</em></a>) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
+<dd class="field-odd"><p><strong>response</strong> (<a class="reference internal" href="#locatieserver.schema.lookup.LookupInlineResponse" title="locatieserver.schema.lookup.LookupInlineResponse"><em>LookupInlineResponse</em></a>) – </p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.lookup.LookupResponse.response">
-<span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.lookup.LookupInlineResponse" title="locatieserver.schema.lookup.LookupInlineResponse"><span class="pre">locatieserver.schema.lookup.LookupInlineResponse</span></a></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupResponse.response" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.lookup.LookupInlineResponse" title="locatieserver.schema.lookup.LookupInlineResponse"><span class="pre">LookupInlineResponse</span></a></em><a class="headerlink" href="#locatieserver.schema.lookup.LookupResponse.response" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 </section>
 <section id="module-locatieserver.schema.suggest">
-<span id="locatieserver-schema-suggest-module"></span><h2>locatieserver.schema.suggest module<a class="headerlink" href="#module-locatieserver.schema.suggest" title="Permalink to this headline"></a></h2>
+<span id="locatieserver-schema-suggest-module"></span><h2>locatieserver.schema.suggest module<a class="headerlink" href="#module-locatieserver.schema.suggest" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.Collation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">Collation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collationQuery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">misspellingsAndCorrections</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#Collation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.Collation" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -635,9 +617,6 @@
 <li><p><strong>hits</strong> (<em>int</em>) – </p></li>
 <li><p><strong>misspellingsAndCorrections</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -660,26 +639,23 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.Spellcheck">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">Spellcheck</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suggestions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#Spellcheck"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.Spellcheck" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>suggestions</strong> (<em>List</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="#locatieserver.schema.suggest.Suggestion" title="locatieserver.schema.suggest.Suggestion"><em>locatieserver.schema.suggest.Suggestion</em></a><em>]</em><em>]</em>) – </p></li>
-<li><p><strong>collations</strong> (<em>List</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="#locatieserver.schema.suggest.Collation" title="locatieserver.schema.suggest.Collation"><em>locatieserver.schema.suggest.Collation</em></a><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>suggestions</strong> (<em>List</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="#locatieserver.schema.suggest.Suggestion" title="locatieserver.schema.suggest.Suggestion"><em>Suggestion</em></a><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>collations</strong> (<em>List</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="#locatieserver.schema.suggest.Collation" title="locatieserver.schema.suggest.Collation"><em>Collation</em></a><em>]</em><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.Spellcheck.collations">
-<span class="sig-name descname"><span class="pre">collations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Collation" title="locatieserver.schema.suggest.Collation"><span class="pre">locatieserver.schema.suggest.Collation</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.Spellcheck.collations" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">collations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Collation" title="locatieserver.schema.suggest.Collation"><span class="pre">Collation</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.Spellcheck.collations" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.Spellcheck.suggestions">
-<span class="sig-name descname"><span class="pre">suggestions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Suggestion" title="locatieserver.schema.suggest.Suggestion"><span class="pre">locatieserver.schema.suggest.Suggestion</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.Spellcheck.suggestions" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">suggestions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Suggestion" title="locatieserver.schema.suggest.Suggestion"><span class="pre">Suggestion</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.Spellcheck.suggestions" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -687,13 +663,10 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.Suggest">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">Suggest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suggest</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#Suggest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.Suggest" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>suggest</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -706,7 +679,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestDoc">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">SuggestDoc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weergavenaam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#SuggestDoc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.SuggestDoc" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -715,9 +688,6 @@
 <li><p><strong>id</strong> (<em>str</em>) – </p></li>
 <li><p><strong>score</strong> (<em>float</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -745,23 +715,20 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestInlineResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">SuggestInlineResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFound</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxScore</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#SuggestInlineResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.SuggestInlineResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>numFound</strong> (<em>int</em>) – </p></li>
 <li><p><strong>start</strong> (<em>int</em>) – </p></li>
 <li><p><strong>maxScore</strong> (<em>float</em>) – </p></li>
-<li><p><strong>docs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#locatieserver.schema.suggest.SuggestDoc" title="locatieserver.schema.suggest.SuggestDoc"><em>locatieserver.schema.suggest.SuggestDoc</em></a><em>]</em>) – </p></li>
+<li><p><strong>docs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#locatieserver.schema.suggest.SuggestDoc" title="locatieserver.schema.suggest.SuggestDoc"><em>SuggestDoc</em></a><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestInlineResponse.docs">
-<span class="sig-name descname"><span class="pre">docs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.suggest.SuggestDoc" title="locatieserver.schema.suggest.SuggestDoc"><span class="pre">locatieserver.schema.suggest.SuggestDoc</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestInlineResponse.docs" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">docs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#locatieserver.schema.suggest.SuggestDoc" title="locatieserver.schema.suggest.SuggestDoc"><span class="pre">SuggestDoc</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestInlineResponse.docs" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -784,33 +751,30 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">SuggestResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">highlighting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spellcheck</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#SuggestResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <p>Response for the suggest service</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>response</strong> (<a class="reference internal" href="#locatieserver.schema.suggest.SuggestInlineResponse" title="locatieserver.schema.suggest.SuggestInlineResponse"><em>locatieserver.schema.suggest.SuggestInlineResponse</em></a>) – </p></li>
-<li><p><strong>highlighting</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="#locatieserver.schema.suggest.Suggest" title="locatieserver.schema.suggest.Suggest"><em>locatieserver.schema.suggest.Suggest</em></a><em>]</em>) – </p></li>
-<li><p><strong>spellcheck</strong> (<a class="reference internal" href="#locatieserver.schema.suggest.Spellcheck" title="locatieserver.schema.suggest.Spellcheck"><em>locatieserver.schema.suggest.Spellcheck</em></a>) – </p></li>
+<li><p><strong>response</strong> (<a class="reference internal" href="#locatieserver.schema.suggest.SuggestInlineResponse" title="locatieserver.schema.suggest.SuggestInlineResponse"><em>SuggestInlineResponse</em></a>) – </p></li>
+<li><p><strong>highlighting</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="#locatieserver.schema.suggest.Suggest" title="locatieserver.schema.suggest.Suggest"><em>Suggest</em></a><em>]</em>) – </p></li>
+<li><p><strong>spellcheck</strong> (<a class="reference internal" href="#locatieserver.schema.suggest.Spellcheck" title="locatieserver.schema.suggest.Spellcheck"><em>Spellcheck</em></a>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestResponse.highlighting">
-<span class="sig-name descname"><span class="pre">highlighting</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Suggest" title="locatieserver.schema.suggest.Suggest"><span class="pre">locatieserver.schema.suggest.Suggest</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse.highlighting" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">highlighting</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Suggest" title="locatieserver.schema.suggest.Suggest"><span class="pre">Suggest</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse.highlighting" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestResponse.response">
-<span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.SuggestInlineResponse" title="locatieserver.schema.suggest.SuggestInlineResponse"><span class="pre">locatieserver.schema.suggest.SuggestInlineResponse</span></a></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse.response" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.SuggestInlineResponse" title="locatieserver.schema.suggest.SuggestInlineResponse"><span class="pre">SuggestInlineResponse</span></a></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse.response" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.SuggestResponse.spellcheck">
-<span class="sig-name descname"><span class="pre">spellcheck</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Spellcheck" title="locatieserver.schema.suggest.Spellcheck"><span class="pre">locatieserver.schema.suggest.Spellcheck</span></a></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse.spellcheck" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">spellcheck</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#locatieserver.schema.suggest.Spellcheck" title="locatieserver.schema.suggest.Spellcheck"><span class="pre">Spellcheck</span></a></em><a class="headerlink" href="#locatieserver.schema.suggest.SuggestResponse.spellcheck" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -818,7 +782,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.suggest.Suggestion">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.suggest.</span></span><span class="sig-name descname"><span class="pre">Suggestion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFound</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startOffset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endOffset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suggestion</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/schema/suggest.html#Suggestion"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.suggest.Suggestion" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">locatieserver.schema.base.LocatieserverBaseModel</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#locatieserver.schema.base.LocatieserverBaseModel" title="locatieserver.schema.base.LocatieserverBaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocatieserverBaseModel</span></code></a></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -827,9 +791,6 @@
 <li><p><strong>endOffset</strong> (<em>int</em>) – </p></li>
 <li><p><strong>suggestion</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 </ul>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py attribute">
@@ -856,7 +817,7 @@
 
 </section>
 <section id="module-locatieserver.schema.utils">
-<span id="locatieserver-schema-utils-module"></span><h2>locatieserver.schema.utils module<a class="headerlink" href="#module-locatieserver.schema.utils" title="Permalink to this headline"></a></h2>
+<span id="locatieserver-schema-utils-module"></span><h2>locatieserver.schema.utils module<a class="headerlink" href="#module-locatieserver.schema.utils" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="locatieserver.schema.utils.Point">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">locatieserver.schema.utils.</span></span><span class="sig-name descname"><span class="pre">Point</span></span><a class="reference internal" href="_modules/locatieserver/schema/utils.html#Point"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.schema.utils.Point" title="Permalink to this definition"></a></dt>
@@ -880,7 +841,7 @@
 
 </section>
 <section id="module-locatieserver.schema">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-locatieserver.schema" title="Permalink to this headline"></a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-locatieserver.schema" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 
