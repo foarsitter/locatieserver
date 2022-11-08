@@ -15,7 +15,7 @@ except ImportError:
     sys.exit(1)
 
 package = "locatieserver"
-python_versions = ["3.8", "3.9"]
+python_versions = ["3.8", "3.9", "3.10", "3.11"]
 nox.options.sessions = (
     "pre-commit",
     "safety",
