@@ -192,11 +192,11 @@ python-versions = ">=3.6,<4.0"
 
 [[package]]
 name = "datamodel-code-generator"
-version = "0.13.5"
+version = "0.14.0"
 description = "Datamodel Code Generator"
 category = "dev"
 optional = false
-python-versions = ">=3.6.1,<4.0.0"
+python-versions = ">=3.7,<4.0"
 
 [package.dependencies]
 argcomplete = ">=1.10,<3.0"
@@ -209,14 +209,15 @@ jinja2 = ">=2.10.1,<4.0"
 openapi-spec-validator = ">=0.2.8,<0.4"
 prance = ">=0.18.2,<1.0"
 pydantic = [
+    {version = ">=1.10.0,<2.0", extras = ["email"], markers = "python_version >= \"3.11\""},
     {version = ">=1.5.1,<2.0", extras = ["email"], markers = "python_version < \"3.10\""},
-    {version = ">=1.9.0,<2.0", extras = ["email"], markers = "python_version >= \"3.10\""},
+    {version = ">=1.9.0,<2.0", extras = ["email"], markers = "python_version >= \"3.10\" and python_version < \"3.11\""},
 ]
 PySnooper = ">=0.4.1,<2.0.0"
 toml = ">=0.10.0,<1.0.0"
 typed-ast = [
-    {version = ">=1.4.2", markers = "python_full_version < \"3.9.8\""},
     {version = ">=1.5.0", markers = "python_full_version >= \"3.9.8\""},
+    {version = ">=1.4.2", markers = "python_full_version < \"3.9.8\""},
 ]
 
 [package.extras]
@@ -1420,7 +1421,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.1"
-content-hash = "1d1681726f2b738dc9d26897bd324bc978d697911d1e8d94504a7e7d064bb0a5"
+content-hash = "1453d4c065c622a4c1a5a47396e8c6a99fc55f2a934df4740954537cebcf2d91"
 
 [metadata.files]
 alabaster = [
@@ -1555,8 +1556,8 @@ darglint = [
     {file = "darglint-1.8.1.tar.gz", hash = "sha256:080d5106df149b199822e7ee7deb9c012b49891538f14a11be681044f0bb20da"},
 ]
 datamodel-code-generator = [
-    {file = "datamodel_code_generator-0.13.5-py3-none-any.whl", hash = "sha256:32d50923f3e1f7e35c52a960c3bc828c6e96e832a871102dbe5d2099bfbf8c4b"},
-    {file = "datamodel_code_generator-0.13.5.tar.gz", hash = "sha256:6987e2383adf12221a9de9b55914e81b0a5cae052e2a00f2c7f0c0d7c91de37b"},
+    {file = "datamodel_code_generator-0.14.0-py3-none-any.whl", hash = "sha256:0a92afc78aff6ed6b7bc23401bdd376d9af765997af013b2c013ba735f3a6a4f"},
+    {file = "datamodel_code_generator-0.14.0.tar.gz", hash = "sha256:d54e07fdf4650ba63f2379a0c95932bb71a4d279cec79252ada581294c4747f7"},
 ]
 distlib = [
     {file = "distlib-0.3.6-py2.py3-none-any.whl", hash = "sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"},
