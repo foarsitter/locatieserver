@@ -318,14 +318,14 @@ files = [
 
 [[package]]
 name = "datamodel-code-generator"
-version = "0.17.0"
+version = "0.17.1"
 description = "Datamodel Code Generator"
 category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "datamodel_code_generator-0.17.0-py3-none-any.whl", hash = "sha256:925aa568f744939df172a660095699f772037ef63e0b472e2b851dd888172a29"},
-    {file = "datamodel_code_generator-0.17.0.tar.gz", hash = "sha256:4de57274936e0a56330fd572db9596acc5f00008a976f4f442b36a5a774f84ae"},
+    {file = "datamodel_code_generator-0.17.1-py3-none-any.whl", hash = "sha256:8e3bf374dff69ce65e07feed3322f5b83432cc7d3974169865ede69c4b98bf92"},
+    {file = "datamodel_code_generator-0.17.1.tar.gz", hash = "sha256:a22e1f71b76c149a0fbb8214f7b1e4926c01bf5bc94ce5264a932d65599fb4a9"},
 ]
 
 [package.dependencies]
@@ -2261,4 +2261,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7.1"
-content-hash = "66eaa5fb0fb2c1610210531b9dd617a2f4f83a2e90224b6f0e99b1d46991887e"
+content-hash = "d4fefb2504722f6af38e5745af72cf8aaae0dcef13e6018683e030ab5e9a4425"
