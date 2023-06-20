@@ -29,7 +29,7 @@ jobs:
                   poetry build --ansi
 
             - name: Publish package on PyPI
-              uses: pypa/gh-action-pypi-publish@v1.6.4
+              uses: pypa/gh-action-pypi-publish@v1.8.6
               with:
                   # https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
                   user: __token__
