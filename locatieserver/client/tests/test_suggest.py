@@ -1,13 +1,9 @@
 import locatieserver.client.suggest
-from locatieserver.client.utils import safe_result
 
 
-@safe_result
-def test_suggest():
+def test_suggest() -> None:
 
     result = locatieserver.client.suggest("Westerein")
 
     assert result
-    assert result.response.num_found == 140
-
-    return result
+    assert result.response.num_found == 141
