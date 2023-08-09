@@ -91,19 +91,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="locatieserver.client.tests.html">locatieserver.client.tests package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#module-locatieserver.client.tests.test_free">locatieserver.client.tests.test_free module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="locatieserver.client.tests.html#locatieserver.client.tests.test_free.test_free"><code class="docutils literal notranslate"><span class="pre">test_free()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#module-locatieserver.client.tests.test_lookup">locatieserver.client.tests.test_lookup module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="locatieserver.client.tests.html#locatieserver.client.tests.test_lookup.test_lookup"><code class="docutils literal notranslate"><span class="pre">test_lookup()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#module-locatieserver.client.tests.test_suggest">locatieserver.client.tests.test_suggest module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="locatieserver.client.tests.html#locatieserver.client.tests.test_suggest.test_suggest"><code class="docutils literal notranslate"><span class="pre">test_suggest()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#module-locatieserver.client.tests">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#locatieserver-client-tests-test-free-module">locatieserver.client.tests.test_free module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#locatieserver-client-tests-test-lookup-module">locatieserver.client.tests.test_lookup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#locatieserver-client-tests-test-suggest-module">locatieserver.client.tests.test_suggest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locatieserver.client.tests.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -112,170 +103,17 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-locatieserver.client.config">
-<span id="locatieserver-client-config-module"></span><h2>locatieserver.client.config module<a class="headerlink" href="#module-locatieserver.client.config" title="Permalink to this heading"></a></h2>
+<section id="locatieserver-client-config-module">
+<h2>locatieserver.client.config module<a class="headerlink" href="#locatieserver-client-config-module" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-locatieserver.client.free">
-<span id="locatieserver-client-free-module"></span><h2>locatieserver.client.free module<a class="headerlink" href="#module-locatieserver.client.free" title="Permalink to this heading"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="locatieserver.client.free.free">
-<span class="sig-prename descclassname"><span class="pre">locatieserver.client.free.</span></span><span class="sig-name descname"><span class="pre">free</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*:*'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'id,weergavenaam,type,score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'score</span> <span class="pre">desc,</span> <span class="pre">sortering</span> <span class="pre">asc,</span> <span class="pre">weergavenaam</span> <span class="pre">asc'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'tekst'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:(gemeente</span> <span class="pre">OR</span> <span class="pre">woonplaats</span> <span class="pre">OR</span> <span class="pre">weg</span> <span class="pre">OR</span> <span class="pre">postcode</span> <span class="pre">OR</span> <span class="pre">adres)'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/client/free.html#free"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.client.free.free" title="Permalink to this definition"></a></dt>
-<dd><p>Free service</p>
-<p>For more info: <a class="reference external" href="https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#5vrije-geocoder-service">https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#5vrije-geocoder-service</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>q</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,
-bijv. combineren met <cite>and</cite>, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.
-Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.</p></li>
-<li><p><strong>fl</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de velden opgegeven die teruggegeven dienen te worden.</p></li>
-<li><p><strong>sort</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven hoe de sortering plaatsvindt.
-De defaultwaarde is <cite>score desc, sortering asc, weergavenaam asc</cite>.
-Door voor deze string <cite>typesortering asc</cite> toe te voegen, kan de oude sortering worden gebruikt.</p></li>
-<li><p><strong>df</strong> (<em>str</em><em> | </em><em>None</em>) – Met behulp van deze parameter kan aan bepaalde <em>velden</em> een extra boost worden meegegeven.
-Hiermee kan de scoreberekening worden aangepast.
-De defaultwaarde is exacte_match^1 suggest^0.5 huisnummer^0.5 huisletter^0.5 huisnummertoevoeging^0.5.
-Om alleen van het suggest-veld gebruik te maken, kan qf=suggest worden meegegeven.</p></li>
-<li><p><strong>rows</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)
-is dat teruggegeven moet worden op deze bevraging.</p></li>
-<li><p><strong>start</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.
-Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</p></li>
-<li><p><strong>wt</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</p></li>
-<li><p><strong>indent</strong> (<em>bool</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</p></li>
-<li><p><strong>lat</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lon</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>lon</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lat</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>fq</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan een filter query worden opgegeven, bijv. <cite>fq=bron:BAG</cite>.
-Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>FreeResponse schema</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="locatieserver.schema.html#locatieserver.schema.free.FreeResponse" title="locatieserver.schema.free.FreeResponse"><em>FreeResponse</em></a></p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="locatieserver-client-free-module">
+<h2>locatieserver.client.free module<a class="headerlink" href="#locatieserver-client-free-module" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-locatieserver.client.lookup">
-<span id="locatieserver-client-lookup-module"></span><h2>locatieserver.client.lookup module<a class="headerlink" href="#module-locatieserver.client.lookup" title="Permalink to this heading"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="locatieserver.client.lookup.lookup">
-<span class="sig-prename descclassname"><span class="pre">locatieserver.client.lookup.</span></span><span class="sig-name descname"><span class="pre">lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:(gemeente</span> <span class="pre">OR</span> <span class="pre">woonplaats</span> <span class="pre">OR</span> <span class="pre">weg</span> <span class="pre">OR</span> <span class="pre">postcode</span> <span class="pre">OR</span> <span class="pre">adres)'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/client/lookup.html#lookup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.client.lookup.lookup" title="Permalink to this definition"></a></dt>
-<dd><p>Lookup Service</p>
-<p>For more info: <a class="reference external" href="https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#4lookup-service">https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#4lookup-service</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<em>str</em>) – Bij de lookup-service moet de id-parameter worden gebruikt om het ID op te geven van het object
-waar naar gezocht dient te worden. De waarde van het ID kan worden bepaald door gebruik te maken van
-de suggest-service, of deze kan uit een extern systeem komen waar dit ID eerder in is opgeslagen.</p></li>
-<li><p><strong>rows</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)
-is dat teruggegeven moet worden op deze bevraging.</p></li>
-<li><p><strong>start</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.
-Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</p></li>
-<li><p><strong>wt</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</p></li>
-<li><p><strong>indent</strong> (<em>bool</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</p></li>
-<li><p><strong>lat</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lon</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>lon</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lat</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>fq</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan een filter query worden opgegeven, bijv. <cite>fq=bron:BAG</cite>.
-Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>LookupResponse schema</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="locatieserver.schema.html#locatieserver.schema.lookup.LookupResponse" title="locatieserver.schema.lookup.LookupResponse"><em>LookupResponse</em></a></p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="locatieserver-client-lookup-module">
+<h2>locatieserver.client.lookup module<a class="headerlink" href="#locatieserver-client-lookup-module" title="Permalink to this heading"></a></h2>
 </section>
-<section id="module-locatieserver.client.suggest">
-<span id="locatieserver-client-suggest-module"></span><h2>locatieserver.client.suggest module<a class="headerlink" href="#module-locatieserver.client.suggest" title="Permalink to this heading"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="locatieserver.client.suggest.suggest">
-<span class="sig-prename descclassname"><span class="pre">locatieserver.client.suggest.</span></span><span class="sig-name descname"><span class="pre">suggest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*:*'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'id,weergavenaam,type,score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'score</span> <span class="pre">desc,</span> <span class="pre">sortering</span> <span class="pre">asc,</span> <span class="pre">weergavenaam</span> <span class="pre">asc'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'score</span> <span class="pre">desc,</span> <span class="pre">sortering</span> <span class="pre">asc,</span> <span class="pre">weergavenaam</span> <span class="pre">asc'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:provincie^1.5</span> <span class="pre">type:gemeente^1.5</span> <span class="pre">type:woonplaats^1.5</span> <span class="pre">type:weg^1.5</span> <span class="pre">type:postcode^0.5</span> <span class="pre">type:adres^1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:(gemeente</span> <span class="pre">OR</span> <span class="pre">woonplaats</span> <span class="pre">OR</span> <span class="pre">weg</span> <span class="pre">OR</span> <span class="pre">postcode</span> <span class="pre">OR</span> <span class="pre">adres)'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/client/suggest.html#suggest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.client.suggest.suggest" title="Permalink to this definition"></a></dt>
-<dd><p>Suggest service.</p>
-<p>For detailed description: <a class="reference external" href="https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#3suggest-service">https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#3suggest-service</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>q</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,
-bijv. combineren met <cite>and</cite>, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.
-Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.</p></li>
-<li><p><strong>fl</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de velden opgegeven die teruggegeven dienen te worden.</p></li>
-<li><p><strong>sort</strong> (<em>str</em>) – Hiermee kan worden opgegeven hoe de sortering plaatsvindt.
-De defaultwaarde is <cite>score desc, sortering asc, weergavenaam asc</cite>.
-Door voor deze string <cite>typesortering asc</cite> toe te voegen, kan de oude sortering worden gebruikt.</p></li>
-<li><p><strong>qf</strong> (<em>str</em><em> | </em><em>None</em>) – Met behulp van deze parameter kan aan bepaalde <em>velden</em> een extra boost worden meegegeven.
-Hiermee kan de scoreberekening worden aangepast.
-De defaultwaarde is exacte_match^1 suggest^0.5 huisnummer^0.5 huisletter^0.5 huisnummertoevoeging^0.5.
-Om alleen van het suggest-veld gebruik te maken, kan qf=suggest worden meegegeven.</p></li>
-<li><p><strong>bq</strong> (<em>str</em><em> | </em><em>None</em>) – Met behulp van deze parameter kan aan bepaalde veldwaarden een extra boost worden meegegeven.
-Ook hiermee kan de scoreberekening worden aangepast. Dit gebeurt alleen o.b.v. de inhoud van het veld <cite>type</cite>.
-De overige typen (nog niet aanwezig) hebben geen boost.
-Voor elke boost query moet een aparte bq=&lt;boost&gt; worden gebruikt.
-Bijvoorbeeld <cite>bq=type:gemeente^1.5&amp;bq=type:woonplaats^1.5</cite>.</p></li>
-<li><p><strong>rows</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)
-is dat teruggegeven moet worden op deze bevraging.</p></li>
-<li><p><strong>start</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.
-Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</p></li>
-<li><p><strong>wt</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</p></li>
-<li><p><strong>indent</strong> (<em>bool</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</p></li>
-<li><p><strong>lat</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lon</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>lon</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lat</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>fq</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan een filter query worden opgegeven, bijv. <cite>fq=bron:BAG</cite>.
-Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>SuggestResponse schema</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="locatieserver.schema.html#locatieserver.schema.suggest.SuggestResponse" title="locatieserver.schema.suggest.SuggestResponse">SuggestResponse</a></p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="locatieserver-client-suggest-module">
+<h2>locatieserver.client.suggest module<a class="headerlink" href="#locatieserver-client-suggest-module" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-locatieserver.client.utils">
 <span id="locatieserver-client-utils-module"></span><h2>locatieserver.client.utils module<a class="headerlink" href="#module-locatieserver.client.utils" title="Permalink to this heading"></a></h2>
@@ -315,162 +153,8 @@ Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
 <dd></dd></dl>
 
 </section>
-<section id="module-locatieserver.client">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-locatieserver.client" title="Permalink to this heading"></a></h2>
-<p>API methods of the locatieserver grouped in this module for clean imports.</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="locatieserver.client.free">
-<span class="sig-prename descclassname"><span class="pre">locatieserver.client.</span></span><span class="sig-name descname"><span class="pre">free</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*:*'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'id,weergavenaam,type,score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'score</span> <span class="pre">desc,</span> <span class="pre">sortering</span> <span class="pre">asc,</span> <span class="pre">weergavenaam</span> <span class="pre">asc'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'tekst'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:(gemeente</span> <span class="pre">OR</span> <span class="pre">woonplaats</span> <span class="pre">OR</span> <span class="pre">weg</span> <span class="pre">OR</span> <span class="pre">postcode</span> <span class="pre">OR</span> <span class="pre">adres)'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/client/free.html#free"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.client.free" title="Permalink to this definition"></a></dt>
-<dd><p>Free service</p>
-<p>For more info: <a class="reference external" href="https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#5vrije-geocoder-service">https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#5vrije-geocoder-service</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>q</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,
-bijv. combineren met <cite>and</cite>, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.
-Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.</p></li>
-<li><p><strong>fl</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de velden opgegeven die teruggegeven dienen te worden.</p></li>
-<li><p><strong>sort</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven hoe de sortering plaatsvindt.
-De defaultwaarde is <cite>score desc, sortering asc, weergavenaam asc</cite>.
-Door voor deze string <cite>typesortering asc</cite> toe te voegen, kan de oude sortering worden gebruikt.</p></li>
-<li><p><strong>df</strong> (<em>str</em><em> | </em><em>None</em>) – Met behulp van deze parameter kan aan bepaalde <em>velden</em> een extra boost worden meegegeven.
-Hiermee kan de scoreberekening worden aangepast.
-De defaultwaarde is exacte_match^1 suggest^0.5 huisnummer^0.5 huisletter^0.5 huisnummertoevoeging^0.5.
-Om alleen van het suggest-veld gebruik te maken, kan qf=suggest worden meegegeven.</p></li>
-<li><p><strong>rows</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)
-is dat teruggegeven moet worden op deze bevraging.</p></li>
-<li><p><strong>start</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.
-Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</p></li>
-<li><p><strong>wt</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</p></li>
-<li><p><strong>indent</strong> (<em>bool</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</p></li>
-<li><p><strong>lat</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lon</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>lon</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lat</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>fq</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan een filter query worden opgegeven, bijv. <cite>fq=bron:BAG</cite>.
-Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>FreeResponse schema</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="locatieserver.schema.html#locatieserver.schema.free.FreeResponse" title="locatieserver.schema.free.FreeResponse"><em>FreeResponse</em></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="locatieserver.client.lookup">
-<span class="sig-prename descclassname"><span class="pre">locatieserver.client.</span></span><span class="sig-name descname"><span class="pre">lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:(gemeente</span> <span class="pre">OR</span> <span class="pre">woonplaats</span> <span class="pre">OR</span> <span class="pre">weg</span> <span class="pre">OR</span> <span class="pre">postcode</span> <span class="pre">OR</span> <span class="pre">adres)'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/client/lookup.html#lookup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.client.lookup" title="Permalink to this definition"></a></dt>
-<dd><p>Lookup Service</p>
-<p>For more info: <a class="reference external" href="https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#4lookup-service">https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#4lookup-service</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<em>str</em>) – Bij de lookup-service moet de id-parameter worden gebruikt om het ID op te geven van het object
-waar naar gezocht dient te worden. De waarde van het ID kan worden bepaald door gebruik te maken van
-de suggest-service, of deze kan uit een extern systeem komen waar dit ID eerder in is opgeslagen.</p></li>
-<li><p><strong>rows</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)
-is dat teruggegeven moet worden op deze bevraging.</p></li>
-<li><p><strong>start</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.
-Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</p></li>
-<li><p><strong>wt</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</p></li>
-<li><p><strong>indent</strong> (<em>bool</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</p></li>
-<li><p><strong>lat</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lon</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>lon</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lat</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>fq</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan een filter query worden opgegeven, bijv. <cite>fq=bron:BAG</cite>.
-Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>LookupResponse schema</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="locatieserver.schema.html#locatieserver.schema.lookup.LookupResponse" title="locatieserver.schema.lookup.LookupResponse"><em>LookupResponse</em></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="locatieserver.client.suggest">
-<span class="sig-prename descclassname"><span class="pre">locatieserver.client.</span></span><span class="sig-name descname"><span class="pre">suggest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*:*'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'id,weergavenaam,type,score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'score</span> <span class="pre">desc,</span> <span class="pre">sortering</span> <span class="pre">asc,</span> <span class="pre">weergavenaam</span> <span class="pre">asc'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'score</span> <span class="pre">desc,</span> <span class="pre">sortering</span> <span class="pre">asc,</span> <span class="pre">weergavenaam</span> <span class="pre">asc'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:provincie^1.5</span> <span class="pre">type:gemeente^1.5</span> <span class="pre">type:woonplaats^1.5</span> <span class="pre">type:weg^1.5</span> <span class="pre">type:postcode^0.5</span> <span class="pre">type:adres^1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'type:(gemeente</span> <span class="pre">OR</span> <span class="pre">woonplaats</span> <span class="pre">OR</span> <span class="pre">weg</span> <span class="pre">OR</span> <span class="pre">postcode</span> <span class="pre">OR</span> <span class="pre">adres)'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/locatieserver/client/suggest.html#suggest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#locatieserver.client.suggest" title="Permalink to this definition"></a></dt>
-<dd><p>Suggest service.</p>
-<p>For detailed description: <a class="reference external" href="https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#3suggest-service">https://github.com/PDOK/locatieserver/wiki/API-Locatieserver#3suggest-service</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>q</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de zoektermen opgegeven. De Solr-syntax voor zoektermen kan hier worden toegepast,
-bijv. combineren met <cite>and</cite>, en het gebruik van dubbele quotes voor opeenvolgende zoektermen.
-Zoektermen mogen incompleet zijn. Ook wordt er gebruik gemaakt van synoniemen.</p></li>
-<li><p><strong>fl</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee worden de velden opgegeven die teruggegeven dienen te worden.</p></li>
-<li><p><strong>sort</strong> (<em>str</em>) – Hiermee kan worden opgegeven hoe de sortering plaatsvindt.
-De defaultwaarde is <cite>score desc, sortering asc, weergavenaam asc</cite>.
-Door voor deze string <cite>typesortering asc</cite> toe te voegen, kan de oude sortering worden gebruikt.</p></li>
-<li><p><strong>qf</strong> (<em>str</em><em> | </em><em>None</em>) – Met behulp van deze parameter kan aan bepaalde <em>velden</em> een extra boost worden meegegeven.
-Hiermee kan de scoreberekening worden aangepast.
-De defaultwaarde is exacte_match^1 suggest^0.5 huisnummer^0.5 huisletter^0.5 huisnummertoevoeging^0.5.
-Om alleen van het suggest-veld gebruik te maken, kan qf=suggest worden meegegeven.</p></li>
-<li><p><strong>bq</strong> (<em>str</em><em> | </em><em>None</em>) – Met behulp van deze parameter kan aan bepaalde veldwaarden een extra boost worden meegegeven.
-Ook hiermee kan de scoreberekening worden aangepast. Dit gebeurt alleen o.b.v. de inhoud van het veld <cite>type</cite>.
-De overige typen (nog niet aanwezig) hebben geen boost.
-Voor elke boost query moet een aparte bq=&lt;boost&gt; worden gebruikt.
-Bijvoorbeeld <cite>bq=type:gemeente^1.5&amp;bq=type:woonplaats^1.5</cite>.</p></li>
-<li><p><strong>rows</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het maximale aantal rijen (ofwel resultaten)
-is dat teruggegeven moet worden op deze bevraging.</p></li>
-<li><p><strong>start</strong> (<em>int</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat de index is van het eerste resultaat dat teruggegeven wordt.
-Dit is zero-based. In combinatie met de rows-parameter kunnen deze services gepagineerd worden bevraagd.</p></li>
-<li><p><strong>wt</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee wordt opgegeven wat het outputformaat is van de bevraging.</p></li>
-<li><p><strong>indent</strong> (<em>bool</em><em> | </em><em>None</em>) – Hiermee kan worden opgegeven of de teruggegeven JSON ingesprongen (geïndenteerd) moet worden.</p></li>
-<li><p><strong>lat</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lon</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>lon</strong> (<em>float</em><em> | </em><em>None</em>) – Werkt alleen in combinatie met <cite>lat</cite>.
-Hiermee kan een coördinaat (in lat/lon, ofwel WGS84) worden opgegeven.
-Met behulp van deze parameters worden de gevonden zoekresultaten gesorteerd op afstand van het meegegeven punt.
-Wanneer de locatie van de gebruiker bekend is, kan op deze manier effectiever worden gezocht.
-Het meegeven van een coördinaat is met name nuttig voor de suggest- en vrije geocoder-services.
-Hier worden meestal meerdere resultaten teruggegeven.
-Als decimaal scheidingsteken moet een punt worden opgegeven i.p.v. een komma.</p></li>
-<li><p><strong>fq</strong> (<em>str</em><em> | </em><em>None</em>) – Hiermee kan een filter query worden opgegeven, bijv. <cite>fq=bron:BAG</cite>.
-Met <cite>fq=*</cite> kan de default filter query worden opgeheven.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>SuggestResponse schema</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="locatieserver.schema.html#locatieserver.schema.suggest.SuggestResponse" title="locatieserver.schema.suggest.SuggestResponse">SuggestResponse</a></p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 
