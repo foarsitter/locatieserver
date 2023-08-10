@@ -45,8 +45,8 @@ def http_get(path, params):
 
     content_type = response.headers.get("Content-Type", None)
 
-    if "json" not in content_type:
-        raise LocatieserverError(f"Cannot handle content-types other then JSON, received {content_type}.")
+#    if "json" not in content_type:
+#        raise LocatieserverError(f"Cannot #handle content-types other then JSON, #received {content_type}.")
 
     if response.status_code == 200:
         return response
