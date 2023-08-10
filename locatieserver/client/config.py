@@ -1,1 +1,1 @@
-BASE_URL = "https://geodata.nationaalgeoregister.nl/locatieserver/v3/"
+BASE_URL = "https://api.pdok.nl/bzk/locatieserver/search/v3_1/"
