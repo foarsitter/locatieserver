@@ -43,11 +43,6 @@ class LocatieserverResponseError(LocatieserverError):
 def http_get(path, params):
     response = httpx.get(BASE_URL + path, params=params)
 
-    content_type = response.headers.get("Content-Type", None)
-
-#    if "json" not in content_type:
-#        raise LocatieserverError(f"Cannot #handle content-types other then JSON, #received {content_type}.")
-
     if response.status_code == 200:
         return response
     elif response.status_code == 400:
