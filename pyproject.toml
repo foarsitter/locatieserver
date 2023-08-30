@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "locatieserver"
-version = "0.5.4"
+version = "0.6.0"
 description = "Locatieserver"
 authors = ["Jelmer Draaijer <info@jelmert.nl>"]
 license = "MIT"
