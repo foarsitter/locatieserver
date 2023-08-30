@@ -1,3 +1,5 @@
+from typing import Dict
+
 import httpx
 import pytest
 
@@ -16,7 +18,7 @@ def test_error_response_json(monkeypatch):
         status_code = 400
         headers = {"content-type": "application/json"}
 
-        def json(self):
+        def json(self) -> Dict:
             return {"code": 400, "metadata": [], "msg": "Missing required parameter: q"}
 
     monkeypatch.setattr(httpx, "get", lambda *args, **kwargs: ErrorResponse())
