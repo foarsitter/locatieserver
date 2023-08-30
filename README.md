@@ -37,7 +37,7 @@ $ pip install locatieserver
 
 ## Usage
 
-Please see the [Command-line Reference] for details.
+Please see the [usage docs] for details.
 
 ## Contributing
 
@@ -68,4 +68,4 @@ This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter]
 
 [license]: https://github.com/foarsitter/locatieserver/blob/main/LICENSE
 [contributor guide]: https://github.com/foarsitter/locatieserver/blob/main/CONTRIBUTING.md
-[command-line reference]: https://locatieserver.readthedocs.io/en/latest/usage.html
+[usage docs]: https://locatieserver.readthedocs.io/en/latest/usage.html

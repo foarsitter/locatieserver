@@ -5,6 +5,7 @@ from typing import Dict
 
 import httpx
 from httpx import Response
+from httpx._types import QueryParamTypes
 
 from locatieserver.client.config import BASE_URL
 from locatieserver.schema.error import ErrorResponse
@@ -13,7 +14,7 @@ from locatieserver.schema.error import ErrorResponse
 DEFAULT_CACHE = {}
 
 
-def get_defaults_from_function(func: Callable) -> Dict[str, Any]:
+def get_defaults_from_function(func: Callable[..., Any]) -> Dict[str, Any]:
     if func.__name__ not in DEFAULT_CACHE:
         signature = inspect.signature(func)
         DEFAULT_CACHE[func.__name__] = {
@@ -25,7 +26,7 @@ def get_defaults_from_function(func: Callable) -> Dict[str, Any]:
     return DEFAULT_CACHE[func.__name__]
 
 
-def filter_defaults(func, **kwargs):
+def filter_defaults(func: Callable[..., Any], **kwargs: Any) -> Dict[str, Any]:
     defaults = get_defaults_from_function(func)
 
     non_default_values = {}
@@ -45,7 +46,7 @@ class LocatieserverResponseError(LocatieserverError):
     pass
 
 
-def http_get(path, params) -> Response:
+def http_get(path: str, params: QueryParamTypes) -> Response:
     response = httpx.get(
         BASE_URL + path, params=params, headers={"accept": "application/json"}
     )
