@@ -1,4 +1,6 @@
+from typing import Dict
 from typing import List
+from typing import Optional
 
 from pydantic import Field
 
@@ -39,13 +41,13 @@ class Collation(LocatieserverBaseModel):
 
 
 class Spellcheck(LocatieserverBaseModel):
-    suggestions: List[str | Suggestion]
-    collations: List[str | Collation]
+    suggestions: List[Optional[Suggestion]]
+    collations: List[Optional[Collation]]
 
 
 class SuggestResponse(LocatieserverBaseModel):
     """Response for the suggest service"""
 
     response: SuggestInlineResponse
-    highlighting: dict[str, Suggest]
+    highlighting: Dict[str, Suggest]
     spellcheck: Spellcheck
