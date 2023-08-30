@@ -1,6 +1,5 @@
 from typing import Any
 from typing import Dict
-from typing import Generator
 
 import httpx
 import pytest
@@ -16,7 +15,7 @@ def test_http_get_400() -> None:
         http_get("lookup", {"misssing": "123456789", "wt": "json", "q": "test"})
 
 
-def test_error_response_json(monkeypatch: Generator[MonkeyPatch, None, None]) -> None:
+def test_error_response_json(monkeypatch: MonkeyPatch) -> None:
     class ErrorResponse:
         status_code = 400
         headers = {"content-type": "application/json"}
