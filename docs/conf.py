@@ -1,4 +1,5 @@
 """Sphinx configuration."""
+
 project = "Locatieserver"
 author = "Jelmer Draaijer"
 copyright = "2023, Jelmer Draaijer"
