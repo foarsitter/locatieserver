@@ -1,3 +1,8 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+
+requires = [ "setuptools" ]
+
 [project]
 name = "locatieserver"
 version = "0.6.0"
@@ -15,6 +20,7 @@ classifiers = [
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
 ]
 
 dependencies = [
@@ -29,22 +35,33 @@ urls.repository = "https://github.com/foarsitter/locatieserver"
 [dependency-groups]
 dev = [
   "coverage[toml]>=7.3",
-  "furo>=2023.8.19",
+  "furo>=2024.8.6",
   "mypy>=1.5.1",
-  "myst-parser>=0.16.1",
-  "pre-commit-uv>=3.8.0",
+  "myst-parser>=3.0.1",
+  "nox>=2024.10.9",
   "pre-commit>=3.3.3",
   "pre-commit-hooks>=4.1",
+  "pre-commit-uv>=3.8",
   "pygments>=2.10",
   "pytest>=6.2.5",
-  "sphinx>=4.3.2",
-  "sphinx-autobuild>=2021.3.14",
-  "sphinx-click>=5.0.1",
-  "typeguard>=2.13.3",
-  "xdoctest[colors]>=0.15.10",
   "ruff>=0.7.4",
+  "sphinx>=7.1.2",
+  "sphinx-autobuild>=2021.3.14",
+  "sphinx-click>=6",
+  "typeguard>=2.13.3",
+  "xdoctest[colors]>=1.2",
 ]
 
+[tool.ruff]
+target-version = "py39"
+
+exclude = [ "./docs" ]
+lint.select = [ "ALL" ]
+lint.ignore = [ "D", "D103", "PLR2004", "S101", "UP006", "UP007" ]
+lint.fixable = [ "ALL" ]
+lint.unfixable = [  ]
+lint.isort.force-single-line = true
+lint.isort.lines-after-imports = 2
 
 [tool.coverage.paths]
 source = [ "src", "*/site-packages" ]
@@ -67,21 +84,3 @@ show_error_context = true
 plugins = [
   "pydantic.mypy",
 ]
-
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
-[tool.ruff]
-exclude = ["./docs"]
-
-
-[tool.ruff.lint]
-select = ["ALL"]
-ignore = ["D103", "S101", "PLR2004", "D"]
-fixable = [ "ALL" ]
-unfixable = [  ]
-
-[tool.ruff.lint.isort]
-force-single-line = true
-lines-after-imports = 2
