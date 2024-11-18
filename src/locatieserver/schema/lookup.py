@@ -1,47 +1,46 @@
-from typing import List
-from typing import Optional
+from __future__ import annotations
 
 from pydantic import Field
 
 from locatieserver.schema.base import LocatieserverBaseModel
-from locatieserver.schema.utils import Point
+from locatieserver.schema.utils import Point  # noqa: TCH001
 
 
 class LookupDoc(LocatieserverBaseModel):
     """Lookup service document"""
 
-    bron: Optional[str]
-    woonplaatscode: Optional[str]
-    type: Optional[str]
-    woonplaatsnaam: Optional[str]
-    huis_nlt: Optional[str]
-    openbareruimtetype: Optional[str]
-    gemeentecode: Optional[str]
-    weergavenaam: Optional[str]
-    straatnaam_verkort: Optional[str]
-    id: Optional[str]
-    gemeentenaam: Optional[str]
-    identificatie: Optional[str]
-    openbareruimte_id: Optional[str]
-    provinciecode: Optional[str]
-    postcode: Optional[str]
-    provincienaam: Optional[str]
-    centroide_ll: Optional[Point]
-    nummeraanduiding_id: Optional[str]
-    adresseerbaarobject_id: Optional[str]
-    huisnummer: Optional[int]
-    huisnummertoevoeging: Optional[str] = ""
-    huisletter: Optional[str] = ""
-    provincieafkorting: Optional[str]
-    centroide_rd: Optional[Point]
-    straatnaam: Optional[str]
-    gekoppeld_perceel: Optional[List[str]]
+    bron: str | None
+    woonplaatscode: str | None
+    type: str | None
+    woonplaatsnaam: str | None
+    huis_nlt: str | None
+    openbareruimtetype: str | None
+    gemeentecode: str | None
+    weergavenaam: str | None
+    straatnaam_verkort: str | None
+    id: str | None
+    gemeentenaam: str | None
+    identificatie: str | None
+    openbareruimte_id: str | None
+    provinciecode: str | None
+    postcode: str | None
+    provincienaam: str | None
+    centroide_ll: Point | None
+    nummeraanduiding_id: str | None
+    adresseerbaarobject_id: str | None
+    huisnummer: int | None
+    huisnummertoevoeging: str | None = ""
+    huisletter: str | None = ""
+    provincieafkorting: str | None
+    centroide_rd: Point | None
+    straatnaam: str | None
+    gekoppeld_perceel: list[str] | None
 
 
 class LookupInlineResponse(LocatieserverBaseModel):
     num_found: int = Field(..., alias="numFound")
     start: int
-    docs: List[LookupDoc]
+    docs: list[LookupDoc]
 
 
 class LookupResponse(LocatieserverBaseModel):

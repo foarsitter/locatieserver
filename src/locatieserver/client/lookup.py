@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from locatieserver.client.utils import filter_defaults
 from locatieserver.client.utils import http_get
@@ -8,15 +8,15 @@ from locatieserver.schema.lookup import LookupResponse
 PATH = "lookup"
 
 
-def lookup(
-    id: str,
-    rows: Optional[int] = 10,
-    start: Optional[int] = 0,
-    wt: Optional[str] = "json",
-    indent: Optional[bool] = True,
-    lat: Optional[float] = None,
-    lon: Optional[float] = None,
-    fq: Optional[str] = "type:(gemeente OR woonplaats OR weg OR postcode OR adres)",
+def lookup(  # noqa: PLR0913
+    id: str,  # noqa: A002
+    rows: int | None = 10,
+    start: int | None = 0,
+    wt: str | None = "json",
+    indent: bool | None = True,  # noqa: FBT002
+    lat: float | None = None,
+    lon: float | None = None,
+    fq: str | None = "type:(gemeente OR woonplaats OR weg OR postcode OR adres)",
 ) -> LookupResponse:
     """Lookup Service
 
@@ -48,7 +48,7 @@ def lookup(
     :param fq: Hiermee kan een filter query worden opgegeven, bijv. `fq=bron:BAG`.
         Met `fq=*` kan de default filter query worden opgeheven.
     :return: LookupResponse schema
-    """
+    """  # noqa: E501
     params = filter_defaults(
         lookup,
         id=id,
@@ -63,4 +63,4 @@ def lookup(
 
     response = http_get(PATH, params)
 
-    return LookupResponse.parse_raw(response.content)
+    return LookupResponse.model_validate_json(response.content)

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from locatieserver.client.utils import filter_defaults
 from locatieserver.client.utils import http_get
@@ -8,21 +8,20 @@ from locatieserver.schema.suggest import SuggestResponse
 PATH = "suggest"
 
 
-def suggest(
-    q: Optional[str] = "*:*",
-    fl: Optional[str] = "id,weergavenaam,type,score",
-    sort: Optional[str] = "score desc, sortering asc, weergavenaam asc",
-    qf: Optional[str] = "score desc, sortering asc, weergavenaam asc",
-    bq: Optional[
-        str
-    ] = "type:provincie^1.5 type:gemeente^1.5 type:woonplaats^1.5 type:weg^1.5 type:postcode^0.5 type:adres^1",
-    rows: Optional[int] = 10,
-    start: Optional[int] = 0,
-    wt: Optional[str] = "json",
-    indent: Optional[bool] = True,
-    lat: Optional[float] = None,
-    lon: Optional[float] = None,
-    fq: Optional[str] = "type:(gemeente OR woonplaats OR weg OR postcode OR adres)",
+def suggest(  # noqa: PLR0913
+    q: str | None = "*:*",
+    fl: str | None = "id,weergavenaam,type,score",
+    sort: str | None = "score desc, sortering asc, weergavenaam asc",
+    qf: str | None = "score desc, sortering asc, weergavenaam asc",
+    bq: str
+    | None = "type:provincie^1.5 type:gemeente^1.5 type:woonplaats^1.5 type:weg^1.5 type:postcode^0.5 type:adres^1",  # noqa: E501
+    rows: int | None = 10,
+    start: int | None = 0,
+    wt: str | None = "json",
+    indent: bool | None = True,  # noqa: FBT002
+    lat: float | None = None,
+    lon: float | None = None,
+    fq: str | None = "type:(gemeente OR woonplaats OR weg OR postcode OR adres)",
 ) -> SuggestResponse:
     """Suggest service.
 
@@ -69,7 +68,7 @@ def suggest(
         Met `fq=*` kan de default filter query worden opgeheven.
     :return: SuggestResponse schema
     :rtype: SuggestResponse
-    """
+    """  # noqa: E501
     params = filter_defaults(
         suggest,
         q=q,

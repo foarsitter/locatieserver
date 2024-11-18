@@ -1,4 +1,3 @@
-from typing import List
 
 from pydantic import Field
 
@@ -32,7 +31,7 @@ class FreeDoc(LocatieserverBaseModel):
     provincieafkorting: str
     centroide_rd: Point
     straatnaam: str
-    gekoppeld_perceel: List[str]
+    gekoppeld_perceel: list[str]
     score: float
 
 
@@ -40,7 +39,7 @@ class FreeInlineResponse(LocatieserverBaseModel):
     num_found: int = Field(..., alias="numFound")
     start: int
     max_score: float = Field(..., alias="maxScore")
-    docs: List[FreeDoc]
+    docs: list[FreeDoc]
 
 
 class FreeResponse(LocatieserverBaseModel):
