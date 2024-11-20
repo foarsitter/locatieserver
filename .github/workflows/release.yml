@@ -30,7 +30,7 @@ jobs:
         uses: salsify/action-detect-and-tag-new-version@v2.0.3
         with:
           version-command: |
-            bash -o pipefail -c "uvx bump-my-version show -i patch new_version'"
+            bash -o pipefail -c "uvx bump-my-version show current_version"
 
       - name: Bump version for developmental release
         if: "! steps.check-version.outputs.tag"
