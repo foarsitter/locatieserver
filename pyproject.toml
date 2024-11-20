@@ -5,7 +5,7 @@ requires = [ "setuptools" ]
 
 [project]
 name = "locatieserver"
-version = "0.6.0"
+version = "0.6.1"
 description = "Locatieserver"
 readme = "README.md"
 license = { text = "MIT" }

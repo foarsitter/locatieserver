@@ -19,9 +19,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v3
 
-      - name: Install Poetry
-        run: uv build
-
       - name: Check if there is a parent commit
         id: check-parent-commit
         run: |
@@ -33,18 +30,16 @@ jobs:
         uses: salsify/action-detect-and-tag-new-version@v2.0.3
         with:
           version-command: |
-            bash -o pipefail -c "poetry version | awk '{ print \$2 }'"
+            bash -o pipefail -c "uvx bump-my-version show -i patch new_version'"
 
       - name: Bump version for developmental release
         if: "! steps.check-version.outputs.tag"
         run: |
-          poetry version patch &&
-          version=$(poetry version | awk '{ print $2 }') &&
-          poetry version $version.dev.$(date +%s)
+          version=$(uvx bump-my-version show -i patch new_version) &&
+          uvx bump-my-version bump --new-version $version.dev.$(date +%s) pyproject.toml
 
       - name: Build package
-        run: |
-          poetry build --ansi
+        run: uv build
 
       - name: Publish package on PyPI
         if: steps.check-version.outputs.tag
