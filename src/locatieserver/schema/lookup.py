@@ -1,10 +1,11 @@
-from typing import List
+from __future__ import annotations
+
 from typing import Optional
 
 from pydantic import Field
 
 from locatieserver.schema.base import LocatieserverBaseModel
-from locatieserver.schema.utils import Point
+from locatieserver.schema.utils import Point  # noqa: TCH001
 
 
 class LookupDoc(LocatieserverBaseModel):
@@ -35,13 +36,13 @@ class LookupDoc(LocatieserverBaseModel):
     provincieafkorting: Optional[str]
     centroide_rd: Optional[Point]
     straatnaam: Optional[str]
-    gekoppeld_perceel: Optional[List[str]]
+    gekoppeld_perceel: Optional[list[str]]
 
 
 class LookupInlineResponse(LocatieserverBaseModel):
     num_found: int = Field(..., alias="numFound")
     start: int
-    docs: List[LookupDoc]
+    docs: list[LookupDoc]
 
 
 class LookupResponse(LocatieserverBaseModel):

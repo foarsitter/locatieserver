@@ -1,5 +1,4 @@
 from typing import Any
-from typing import Dict
 
 import httpx
 import pytest
@@ -18,12 +17,12 @@ def test_http_get_400() -> None:
 def test_error_response_json(monkeypatch: MonkeyPatch) -> None:
     class ErrorResponse:
         status_code = 400
-        headers = {"content-type": "application/json"}
+        headers = {"content-type": "application/json"}  # noqa: RUF012
 
-        def json(self) -> Dict[str, Any]:
+        def json(self) -> dict[str, Any]:
             return {"code": 400, "metadata": [], "msg": "Missing required parameter: q"}
 
-    monkeypatch.setattr(httpx, "get", lambda *args, **kwargs: ErrorResponse())
+    monkeypatch.setattr(httpx, "get", lambda *_, **__: ErrorResponse())
 
     with pytest.raises(LocatieserverResponseError):
-        free("123456789", wt="json")
+        free("123456789")
