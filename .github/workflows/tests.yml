@@ -41,7 +41,7 @@ jobs:
         uses: astral-sh/setup-uv@v3
 
       - name: Set up Python ${{ matrix.python }}
-        uses: actions/setup-python@v5.3.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: ${{ matrix.python }}
 
@@ -76,7 +76,7 @@ jobs:
       - name: Set up Python 3.11
         run: uv python install 3.11
       - name: Set up Python
-        uses: actions/setup-python@v5.3.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: "3.11"
 
